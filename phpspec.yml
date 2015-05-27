@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: lmsl
+        psr4_prefix: lmsl
+        src_path: app
