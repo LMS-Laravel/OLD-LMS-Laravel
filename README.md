@@ -8,7 +8,7 @@ Used By
 -------------
 
 + [PHPacademy](http://phpacademy.co)
-+ [Bootcampwith](http://bootcampwith.us)
++ [BootcampwithUS](http://bootcampwith.us)
 
 
 Created By
