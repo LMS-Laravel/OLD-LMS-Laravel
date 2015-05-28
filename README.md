@@ -1,4 +1,6 @@
 # LMS-Laravel
+[![License](https://poser.pugx.org/zizaco/entrust/license.svg)](https://packagist.org/packages/angelkurten/lms-laravel)
+[![Total Downloads](https://img.shields.io/packagist/dt/zizaco/entrust.svg)](https://packagist.org/packages/angelkurten/lms-laravel)
 
 CMS-laravel is a management system of educational content, want to facilitate the creation of a platform simple and intuitive
 
