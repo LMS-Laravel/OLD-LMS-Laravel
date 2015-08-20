@@ -1,0 +1,15 @@
+{
+	"name": "angelkurten/user",
+	"description": "Module for users",
+	"authors": [
+		{
+			"name": "Angel Kurten",
+			"email": "angelkurten@hotmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Modules\\User\\": ""
+		}
+	}
+}

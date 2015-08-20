@@ -18,6 +18,6 @@ Created By
 
 + [Angel Kurten](http://twitter.com/AngelKurten)
 
-Colaborator
+Collaborator
 ---------
 + [Carlos Rojas](http://twitter.com/carlosrojas_o)
