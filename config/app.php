@@ -151,6 +151,9 @@ return [
         Pingpong\Modules\ModulesServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        Webpatser\Countries\CountriesServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        Styde\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -204,7 +207,10 @@ return [
         'Module'    => Pingpong\Modules\Facades\Module::class,
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
         'PDF'       => Barryvdh\DomPDF\Facade::class,
-
+        'Countries' => Webpatser\Countries\CountriesFacade::class,
+        'Alert'     => Styde\Html\Facades\Alert::class,
+        'Field'     => Styde\Html\Facades\Field::class,
+        'Menu'      => Styde\Html\Facades\Menu::class,
     ],
 
 ];

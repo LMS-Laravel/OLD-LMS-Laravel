@@ -196,10 +196,11 @@ class AuthDatabaseSeeder extends Seeder {
 	private function usersSeeder(){
 
 		DB::table('users')->insert(array(
-            'firstname' => 'Jose',
-            'lastname' => 'Perez Lopez',
+            'first_name' => 'John',
+            'last_name' => 'Doe',
             'username' => 'admin',
-            'email' => 'admin@demo.com',
+            'country_id' => 170,
+            'email' => 'john_doe@demo.com',
             'password' => \Hash::make('admin123'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),

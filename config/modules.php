@@ -137,10 +137,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'pingpong-modules',
+        'vendor' => 'lms-laravel',
         'author' => [
-            'name' => 'Pingpong Labs',
-            'email' => 'pingpong.labs@gmail.com',
+            'name' => 'Angel Kurten',
+            'email' => 'angelkurten@gmail.com',
         ],
     ],
     /*
@@ -153,7 +153,7 @@ return [
     */
     'cache' => [
         'enabled' => false,
-        'key' => 'pingpong-modules',
+        'key' => 'lms-laravel',
         'lifetime' => 60,
     ],
 

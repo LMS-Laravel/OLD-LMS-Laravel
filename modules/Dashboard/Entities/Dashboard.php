@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\DB;
 
 class Dashboard extends Model {
 
+    protected $table = 'dashboard';
+
     public static function getCountUsers() {
 
         return array(

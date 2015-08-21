@@ -13,8 +13,11 @@ class DashboardDatabaseSeeder extends Seeder {
 	public function run()
 	{
 		Model::unguard();
-		
-		// $this->call("OthersTableSeeder");
+
+		\DB::table('dashboard')->insert(array(
+			'name' => 'LMS - Laravel',
+			'description' => 'It \' Simple',
+		));
 	}
 
 }

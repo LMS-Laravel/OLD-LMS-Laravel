@@ -1,0 +1,857 @@
+@charset "utf-8";
+
+/*
+ * Theme Name	 : avaloo - one page creative agency tempalte
+ * Theme Author	 : aresthemes
+ * Theme Version : 1.1
+ */
+ 
+/*
+ * Theme Sections
+ *
+ * SEC00 : Misc. Stylesheets
+ * SEC01 : Header Stylesheets
+ * SEC02 : About Section Stylesheets
+ * SEC03 : Team Section Stylesheets
+ * SEC04 : Portfolio Section Stylesheets
+ * SEC05 : Services Section Stylesheets
+ * SEC06 : News Section Stylesheets
+ * SEC07 : Counters Section Stylesheets
+ * SEC08 : Contact Section Stylesheets
+ * 
+ */
+
+ /* SEC00 : Misc. Stylesheets */
+	
+	body, html {
+		
+		width: 100%;
+		height: 100%;
+
+		font-family: "Roboto Slab", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		color: #666;
+
+	}
+	
+	.mask {
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 51, 153, .7);
+		background-image: url(../img/mask-pattern.png);
+		background-repeat: repeat;
+	}
+	
+	section {
+		padding: 70px 0;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin:0;
+	}
+	
+	h2 {
+		font-family: "Roboto Slab", Arial, sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		color: #003399;
+		letter-spacing: -1px;
+		margin: 0 0 5px 0;
+		text-align: center
+	}
+	
+	h3 {
+		font-family: "Roboto Slab", Arial, sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		color: #aaa;
+		letter-spacing: -1px;
+		margin: 0 0 5px 0;
+		text-align: center
+	}
+	
+	.loading-wrapper {
+		display: table;
+		background: #f4f6fb;
+		position: absolute;
+		z-index: 100000;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.loading {
+		display: table-cell;
+		vertical-align: middle;
+		text-align:center;
+	}
+	
+	.loading .spinner {
+		border: 20px solid #003399;
+		border-right-color: transparent;
+	}
+	
+	.new-bandage {
+		position: absolute;
+		top:0;
+		right:0;
+		width: 50px;
+		height: 50px;
+		background: url(../img/new-bandage.png) no-repeat center center;
+	}
+	
+	.white-popup-block {
+		background: #FFF;
+		padding: 20px 30px;
+		text-align: left;
+		max-width: 650px;
+		margin: 40px auto;
+		position: relative;
+	}
+	
+	.btn-o {
+		display: inline-block;
+		border: 2px solid #00ccff;
+		padding: 10px 15px;
+		border-radius: 50px;
+		font-size: 18px;
+		font-weight: 700;
+		color: #00ccff;
+		margin:0;
+		line-height: 1.4;
+		vertical-align: baseline !important;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+	
+	.btn-o:hover {
+		border-color: #fff;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.btn {
+		display: inline-block;
+		border: 2px solid #00ccff;
+		background: #00ccff;
+		padding: 10px 15px;
+		border-radius: 50px;
+		font-size: 18px;
+		font-weight: 700;
+		color: #fff;
+		margin:0;
+		line-height: 1.4;
+		vertical-align: baseline !important;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+	
+	.btn:hover {
+		background: transparent;
+		color: #00ccff;
+		text-decoration: none;
+	}
+	
+/* SEC01 : Header Stylesheets */
+	
+	header {
+		position: relative;
+		display: table;
+		width: 100%;
+		height: 105%;
+		background: #003399;
+	}
+	
+	header .mask {
+		opacity: .5
+	}
+	
+	header .video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	
+	header nav {
+		padding-top: 30px;
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+	}
+	
+	header nav .nav {
+		margin-top: 25px;
+	}
+	
+	header nav .navbar-toggle {
+		margin-top: 30px;
+	}
+	
+	header nav .navbar-toggle span.icon-bar {
+		background:#ffffff;
+	}
+	
+	header nav .nav a {
+		font-family: "Roboto Slab", Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		color: #fff;
+		border-radius: 30px;
+		padding: 10px 15px;
+		border: 2px solid transparent;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+	
+	header nav .nav a:hover,
+	header nav .nav a:focus	{
+		background-color: transparent;
+		color: #00ccff;
+		border: 2px solid #00ccff;
+		outline: none !important;
+	}
+	
+	header .top-nav-collapse {
+		padding: 0px 0 20px 0;
+		background: #003399
+	}
+
+	.slider-wrapper {
+		position: relative;
+		z-index: 5;
+		display: table-cell;
+		text-align : center;
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+	}
+
+	.slider-wrapper .slider-content {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.slider-wrapper .slider-content h1 {
+		font-size: 35px;
+		font-weight: 500;
+		text-decoration: none;
+		color:#fff;
+		letter-spacing: -2px;
+		margin:0;
+		padding:0;
+	}
+	
+	.slider-wrapper .slider-content h2 {
+		font-size: 35px;
+		font-weight: 100 !important;
+		text-decoration: none;
+		color:#fff;
+		letter-spacing: -2px;
+		margin: 0 0 10px 0;
+		padding:0;
+	}
+	
+	.slider-wrapper .slider-content p {
+		margin: 0 auto;
+		font-size: 16px;
+		font-weight: 400;
+		margin: 10px auto 20px;
+		color:#fff;
+	}
+	
+/* SEC02 : About Section Stylesheets */
+	
+	.about {
+		position: relative;
+	}
+	
+	.about .separator {
+		display: block;
+		height: 50px;
+		position: absolute;
+		top: -50px;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.about .separator path {
+		fill: #fff;
+	}
+	
+	#about {
+		position: relative;
+	}
+	
+	#about h3 {
+		margin-bottom: 40px;
+	}
+	
+	#about .about-text {
+		font-weight: 500
+	}
+	
+	#about .about-images {
+		margin-top: 40px
+	}
+	
+	#about .about-images .item {
+		margin: 0 15px;
+	}
+	
+	#about .about-images .img {
+		position: relative;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+
+	#about .about-images .img .mask {
+		border-radius: 3px;
+		background-color: rgba(0, 51, 153, .4);
+		opacity:0;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+
+	#about .about-images .img img {
+		border-radius: 3px
+	}
+
+	#about .about-images .img .zoom {
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+		text-align: center;
+		opacity: 0;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+	
+	#about .about-images .img .count {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		margin-top: -40px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		opacity: 0;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+
+	#about .about-images .img:hover > .mask {
+		opacity: 1;
+	}
+	
+	#about .about-images .img:hover > .zoom {
+		opacity: 1;
+		bottom: 30px;
+	}
+	
+	#about .about-images .img:hover > .count {
+		opacity: 1;
+		margin-top: -30px;
+	}
+	
+/* SEC03 : Team Section Stylesheets */
+
+	.team {
+		position: relative;
+		background: #003399 url(../img/team-bg.jpg) no-repeat center center;
+		padding: 60px 0;
+	}
+	
+	.team .separator {
+		display: block;
+		height: 70px;
+		position: absolute;
+		top:0;
+		width: 100%;
+		z-index: 100;
+	}
+	
+	.team .separator path {
+		fill: #fff;
+	}
+	
+	.team h2,
+	.team h3 {
+		color: #fff;
+	}
+
+	#team .team-slider {
+		margin-top: 40px;
+	}
+
+	#team .member {
+		margin:0 15px;
+	}
+
+	.member h4 {
+		font-size: 18px;
+		font-weight: 700;
+		color: #fff;
+		margin-top: 15px;
+	}
+	
+	.member .sep {
+		width: 40px;
+		height: 4px;
+		margin: 10px auto;
+		background: #00ccff;
+	}
+	
+	.member p {
+		font-size: 14px;
+		font-weight: 500;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
+	.member .title {
+		font-size:14px;
+	}
+	
+	.member .social i {
+		font-size: 20px;
+		color: #fff;
+		padding: 0 10px;
+	}
+	
+	.member .social i:hover {
+		color: #00ccff;
+	}
+	
+/* SEC04 : Portfolio Section Stylesheets */
+
+	#portfolio {
+		position: relative;
+	}
+	
+	#portfolio .separator {
+		display: block;
+		height: 50px;
+		position: absolute;
+		top: -50px;
+		width: 100%;
+		z-index: 100;
+	}
+	
+	#portfolio .separator path {
+		fill: #fff;
+	}
+
+	#portfolio .cbp-l-filters-button {
+		text-align: center !important;
+	}
+
+	#portfolio .cbp-l-inline {
+		font-family: "Roboto Slab", Arial, sans-serif !important;
+	}
+	
+	/* Portfolio Filter Buttons */
+		#portfolio .cbp-l-filters-button .cbp-filter-item:hover {
+			border-color: #003399;
+			color:#003399
+		}
+		
+		#portfolio .cbp-l-filters-button .cbp-filter-item-active {
+			border-color: #003399;
+			background-color: #003399
+		}
+
+	/* Portfolio Item Hover */
+		
+		#portfolio .cbp-caption-zoom .cbp-caption-activeWrap {
+			background-color: rgba( 0,51,153, .4 );
+		}
+		
+		#portfolio .cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight {
+			background-color: #003399;
+		}
+		
+		#portfolio .cbp-l-caption-buttonLeft:hover,
+		#portfolio .cbp-l-caption-buttonRight:hover {
+			background-color: #fff;
+			color:#003399
+		}
+		
+		#portfolio .cbp-item {
+			border-radius: 3px;
+			overflow: hidden;
+		}
+	
+/* SEC05 : Services Section Stylesheets */
+
+	.services {
+		position: relative;
+		background: #003399 url(../img/services-bg.jpg) no-repeat center center;
+		padding: 60px 0;
+	}
+	
+	.services .separator {
+		display: block;
+		height: 70px;
+		position: absolute;
+		top:0;
+		width: 100%;
+		z-index: 100;
+	}
+	
+	.services .separator path {
+		fill: #fff;
+	}
+	
+	.services h2,
+	.services h3 {
+		color: #fff;
+	}
+	
+	.services .item {
+		text-align: center;
+	}
+	
+	.services .item .icon {
+		border: 2px solid #00ccff;
+		padding: 15px;
+		font-size: 30px;
+		color:#00ccff;
+		border-radius: 50%;
+		margin-top: 40px;
+		
+		-webkit-transition:	all 0.3s;
+		-moz-transition:	all 0.3s;
+		-o-transition:		all 0.3s;
+		-ms-transition:		all 0.3s;
+		transition:			all 0.3s;
+		
+	}
+	
+	.services .item h4 {
+		font-size: 18px;
+		font-weight: 700;
+		color:#00ccff;
+		margin: 15px 0;
+	}
+	
+	.services .item p {
+		padding: 0 15px;
+		font-size: 14px;
+		font-weight: 500;
+		color:#fff;
+	}
+	
+	.services .item:hover .icon {
+		background: #00ccff;
+		color: #fff;
+	}
+	
+/* SEC06 : News Section Stylesheets */
+
+	#news {
+		position: relative;
+	}
+	
+	#news .separator {
+		display: block;
+		height: 50px;
+		position: absolute;
+		top: -50px;
+		width: 100%;
+		z-index: 100;
+	}
+	
+	#news .separator path {
+		fill: #fff;
+	}
+	
+	#news .news-slider {
+		position: relative;
+		margin-top: 40px;
+	}
+	
+	#news .news-slider .item {
+		position: relative;
+		margin: 0 10px;
+	}
+	
+	#news .news-slider .item .time-bandage {
+		position: absolute;
+		top:0;
+		left: 20px;
+		width: 50px;
+		height: 55px;
+		text-align: center;
+		background: url(../img/news-time-bandage.png) no-repeat center center;
+		font-family: "Roboto Slab", Arial, sans-serif;
+		font-weight: 700;
+		color: #fff;
+		line-height: 1;
+		padding: 7px 0 0 0;
+	}
+
+	#news .news-slider .item .image {
+		position: relative;
+		overflow: hidden;
+		border-radius: 3px
+	}
+	
+	#news .news-slider .item .tools {
+		position: relative;
+		margin-top: 10px;
+		height: 40px;
+		padding-left: 15px;
+	}
+	
+	#news .news-slider .item .tools .icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #00ccff;
+		width: 6px;
+		height: 40px;
+		border-radius: 3px;
+	}
+	
+	#news .news-slider .owl-buttons {
+		position: absolute;
+		top: 50%;
+		margin-top: -45px;
+		width: 100%;
+		z-index: 0;
+		height: 0;
+	}
+	
+	#news .news-slider .owl-buttons div {
+		background: transparent;
+	}
+	
+	#news .news-slider .owl-buttons .fa {
+		color:#aaa;
+		border: 2px solid #aaa;
+		border-radius: 50%;
+		font-size: 15px;
+	}
+	
+	#news .news-slider .owl-buttons .rightArrow {
+		position: absolute;
+		right: -45px;
+		padding: 9px 10px 9px 13px;
+	}
+	
+	#news .news-slider .owl-buttons .leftArrow {
+		position: absolute;
+		left: -45px;
+		padding: 9px 13px 9px 10px;
+	}
+	
+/* SEC07 : Counters Section Stylesheets */
+
+	.counters {
+		position: relative;
+		background: #003399 url(../img/counters-bg.jpg) no-repeat center center;
+		padding: 60px 0;
+	}
+	
+	.counters .separator {
+		display: block;
+		height: 70px;
+		position: absolute;
+		top:0;
+		width: 100%;
+		z-index: 100;
+	}
+	
+	.counters .separator path {
+		fill: #fff;
+	}
+	
+	.counters h2,
+	.counters h3 {
+		color: #fff;
+	}
+	
+	.counters .icon {
+		width: 120px;
+		height: 120px;
+		font-size: 60px;
+		text-align: center;
+		line-height: 120px;
+		color:#00ccff;
+		border: 3px solid #00ccff;
+		border-radius: 50%;
+		margin-top: 40px;
+	}
+	
+	.counters h4 {
+		font-size: 60px;
+		font-weight: 700;
+		letter-spacing: -2px;
+		color:#fff;
+		margin: 15px 0;
+	}
+	
+	.counters h5 {
+		font-size: 18px;
+		font-weight: 700;
+		color:#fff;
+	}
+	
+	.counters p {
+		font-size: 14px;
+		font-weight: 500;
+		color:#fff;
+	}
+
+/* SEC08 : Contact Section Stylesheets */
+
+	#contact {
+		position: relative;
+		padding-bottom: 0;
+	}
+	
+	#contact .separator {
+		display: block;
+		height: 50px;
+		position: absolute;
+		top: -50px;
+		width: 100%;
+		z-index: 100;
+	}
+	
+	#contact .separator path {
+		fill: #fff;
+	}
+	
+	#contact .contact-form {
+		margin-top: 40px;
+	}
+	
+	#contact .contact-form .form-control {
+		border: 2px solid #003399;
+		color: #003399 !important;
+		padding: 20px;
+	}
+	
+	#contact .contact-form textarea {
+		margin-top: 20px;
+	}
+
+	#contact .map {
+		margin-top: 60px;
+		height: 400px;
+	}
+	
+	#contact .bottom {
+		background: #003399;
+		padding: 25px 0;
+		color: #fff;
+	}
+	
+	#contact .bottom i {
+		font-size: 20px;
+		padding: 10px 10px 0 10px;
+		color:#00ccff;
+		border-radius: 50%;
+	}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+	
+	h2 {
+		font-size: 22px
+	}
+	
+	h3 {
+		font-size: 16px
+	}
+	
+	.bottom .col-lg-4:last-child {
+		text-align: left;
+	}
+	
+	#contact .contact-form input {
+		margin-bottom: 5px;
+	}
+	
+	#contact .contact-form textarea {
+		margin-top: 0px;
+	}
+	
+	#news .news-slider .owl-buttons {
+		position: relative;
+		margin-top: 25px;
+	}
+	
+	#news .news-slider .owl-buttons div {
+		background: #fff;
+		padding: 0;
+	}
+	
+	#news .news-slider .owl-buttons .leftArrow {
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: 0;
+	}
+	
+	#news .news-slider .owl-buttons .rightArrow {
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: 0;
+	}
+	
+}
+
+.avatar{
+	border-radius: 50%;
+	width: 87%;
+	text-align: center;
+}
+
+.divAvatar{
+	text-align: center;
+}

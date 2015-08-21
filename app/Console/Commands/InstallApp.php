@@ -19,7 +19,7 @@ class InstallApp extends Command
      *
      * @var string
      */
-    protected $description = 'Hace una migración y un ejecuta los seeders de la aplicación';
+    protected $description = 'Hace una migración y ejecuta los seeders de la aplicación';
 
     /**
      * Create a new command instance.
@@ -39,8 +39,11 @@ class InstallApp extends Command
     public function handle() {
 
         $modules = Module::all();
-
+        $this->call('key:generate');
+        $this->call('migrate');
+        $this->call('db:seed');
         $this->call('module:migrate');
+        $this->call('countries:migration');
 
         foreach($modules as $module)
 

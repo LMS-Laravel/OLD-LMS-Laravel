@@ -1,0 +1,15 @@
+{
+	"name": "lms-laravel/course",
+	"description": "",
+	"authors": [
+		{
+			"name": "Angel Kurten",
+			"email": "angelkurten@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Modules\\Course\\": ""
+		}
+	}
+}

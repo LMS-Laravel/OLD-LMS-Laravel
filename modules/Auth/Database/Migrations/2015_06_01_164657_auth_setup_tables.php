@@ -18,18 +18,27 @@ class AuthSetupTables extends Migration
             $table->string('display_name')->nullable();
             $table->string('description')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         // Create table for storing users
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('firstname')->nullable();
-            $table->string('lastname')->nullable();
-            $table->string('username')->nullable();
-            $table->string('email')->nullable();
-            $table->string('password')->nullable();
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->integer('country_id')->unsigned();
+            $table->string('phone_number')->nullable();
+            $table->string('username');
+            $table->string('password');
+            $table->string('email');
+            $table->integer('points')->default(0);
+            $table->timestamp('last_login')->nullable();
             $table->string('remember_token');
+            $table->boolean('state')->default(1);
             $table->timestamps();
+            $table->softDeletes();
+
+            $table->foreign('country_id')->references('id')->on('countries');
         });
 
         // Create table for associating roles to users (Many-to-Many)
@@ -43,6 +52,7 @@ class AuthSetupTables extends Migration
                 ->onUpdate('cascade')->onDelete('cascade');
 
             $table->primary(['user_id', 'role_id']);
+            $table->softDeletes();
         });
 
         // Create table for storing permissions
@@ -52,6 +62,7 @@ class AuthSetupTables extends Migration
             $table->string('display_name')->nullable();
             $table->string('description')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         // Create table for associating permissions to roles (Many-to-Many)
@@ -65,6 +76,7 @@ class AuthSetupTables extends Migration
                 ->onUpdate('cascade')->onDelete('cascade');
 
             $table->primary(['permission_id', 'role_id']);
+            $table->softDeletes();
         });
     }
 
