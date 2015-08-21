@@ -1,13 +1,13 @@
 <?php
 
-Route::group(['prefix' => '/', 'namespace' => 'Modules\Auth\Http\Controllers'], function()
+Route::group(['prefix' => 'auth', 'namespace' => 'Modules\Auth\Http\Controllers'], function()
 {
-	Route::get('/auth/login', 'AuthController@index');
-    Route::post('/auth/login', ['as' => 'auth.login', 'uses' => 'AuthController@postLogin']);
-    Route::get('/auth/logout', ['as' => 'auth.logout', 'uses' => 'AuthController@getLogout']);
+	Route::get('/login', 'AuthController@index');
+    Route::post('/login', ['as' => 'auth.login', 'uses' => 'AuthController@postLogin']);
+    Route::get('/logout', ['as' => 'auth.logout', 'uses' => 'AuthController@getLogout']);
 
-    Route::resource('auth/permission', 'PermissionController');
-    Route::resource('auth/role', 'RoleController');
-    Route::resource('auth/user', 'UserController');
-    Route::post('/auth/user/change-password', ['as' => 'user.change-password', 'uses' => 'UserController@changePassword']);
+    Route::resource('permission', 'PermissionController');
+    Route::resource('role', 'RoleController');
+    Route::resource('user', 'UserController');
+    Route::post('/user/change-password', ['as' => 'user.change-password', 'uses' => 'UserController@changePassword']);
 });
