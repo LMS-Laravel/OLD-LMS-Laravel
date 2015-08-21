@@ -72,23 +72,7 @@
             </div>
 
             <div class="collapse navbar-collapse" id="nav">
-                <ul class="nav navbar-nav navbar-right nav-effect uppercase">
-                    <li><a data-scroll href="#home">Inicio</a></li>
-                    <li><a data-scroll href="#about">Sobre nosotros</a></li>
-                    <li><a data-scroll href="#team">Equipo</a></li>
-                    <li><a data-scroll href="#services">Servicios</a></li>
-                    <li><a data-scroll href="#">Plataforma</a></li>
-                    <li><a data-scroll href="#contact">Contacto</a></li>
-                    <li>
-                        <a target="_BLANK" href="https://www.facebook.com/pages/PHP-Virtual-Academy/1481688408772312"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a target="_BLANK" href="https://twitter.com/academyphp"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a target="_BLANK" href="https://plus.google.com/102878572081813777008" rel="publisher"><i class="fa fa-google-plus"></i></a>
-                    </li>
-                </ul>
+                {!! $principal->boot() !!}
             </div><!-- /.navbar-collapse -->
         </div>
     </nav>

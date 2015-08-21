@@ -50,7 +50,4 @@ return [
         ],
         'contact'                       => 'Cont'
     ]
-
-
-
 ];
