@@ -1,0 +1,460 @@
+/*
+ *  Document   : autumn.css
+ *  Author     : pixelcave
+ *  Description: THEME AUTUMN
+ *
+ */
+
+/* Main Dark Colors */
+body,
+.nav.navbar-nav-custom > li > a,
+.navbar-default .navbar-nav > li > a,
+.form-control,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+li.dropdown-header,
+.chosen-container-single .chosen-single,
+.themed-color-dark {
+    color: #4a392b;
+}
+
+#page-container,
+#sidebar,
+#sidebar-alt,
+.table-pricing.table-featured td,
+.table-pricing td.table-featured,
+.themed-background-dark {
+    background-color: #4a392b;
+}
+
+.themed-border-dark {
+    border-color: #4a392b;
+}
+
+header.navbar-inverse.navbar-fixed-bottom {
+    border-top-color: #4a392b;
+}
+
+header.navbar-inverse.navbar-fixed-top,
+.table-pricing.table-featured th,
+.table-pricing th.table-featured {
+    border-bottom-color: #4a392b;
+}
+
+.navbar.navbar-inverse {
+    background-color: #5b4c3f;
+}
+
+/* Main Light Colors */
+.sidebar-nav a,
+.header-section h1 i,
+blockquote:before {
+    color: #f2eeeb;
+}
+
+#page-content,
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th,
+ul.wysihtml5-toolbar a.btn.wysihtml5-command-active,
+.slider-track {
+    background-color: #f2eeeb;
+}
+
+blockquote,
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td,
+.table tbody + tbody,
+.table-bordered,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td,
+.list-group-item,
+.nav-tabs > li > a:hover,
+.pager > li > a,
+.pager > li > span,
+.pager > li.disabled > a:hover,
+.dropzone,
+ul.wysihtml5-toolbar a.btn.wysihtml5-command-active {
+    border-color: #f2eeeb;
+}
+
+.dataTables_wrapper > div {
+    border-color: #f2eeeb;
+    border-top-width: 0;
+}
+
+header.navbar-default.navbar-fixed-bottom,
+.content-header,
+li.dropdown-header,
+.breadcrumb-top,
+.style-alt footer {
+    border-top-color: #f2eeeb;
+}
+
+header.navbar-default.navbar-fixed-top,
+.block-title,
+fieldset legend,
+.form-bordered .form-group,
+.wizard-steps,
+.nav-tabs,
+li.dropdown-header,
+.style-alt .content-header,
+.style-alt .breadcrumb-top {
+    border-bottom-color: #f2eeeb;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border-color: #f2eeeb;
+    border-bottom-color: transparent;
+}
+
+.block-title .nav-tabs > li.active > a,
+.block-title .nav-tabs > li.active > a:hover,
+.block-title .nav-tabs > li.active > a:focus {
+    border-color: #f2eeeb;
+    border-bottom-color: #ffffff;
+}
+
+.block-title,
+.navbar.navbar-default,
+.form-bordered .form-group.form-actions,
+.table tfoot > tr > th,
+.table tfoot > tr > td,
+a.list-group-item:hover,
+a.list-group-item:focus,
+.nav > li > a:hover,
+.nav > li > a:focus,
+li.dropdown-header,
+.style-alt .content-header + .breadcrumb-top,
+.style-alt .breadcrumb-top + .content-header,
+.style-alt footer,
+.dropzone,
+.dataTables_wrapper > div {
+    background-color: #fcfbfa;
+}
+
+.switch-default input:checked + span,
+.style-alt .block-title {
+    background-color: #e8e1da;
+}
+
+.block,
+.form-control,
+.input-group-addon,
+.switch-default span,
+.dropdown-menu,
+.style-alt .block,
+.chosen-container-single .chosen-single,
+.chosen-container-single .chosen-search input[type="text"],
+.chosen-container-multi .chosen-choices,
+div.tagsinput,
+.select2-container .select2-choice,
+.select2-search input,
+.select2-container-multi .select2-choices {
+    border-color: #e8e1da;
+}
+
+footer,
+.media-feed > .media {
+    border-top-color: #e8e1da;
+}
+
+.content-header,
+.content-top,
+.block-top,
+.breadcrumb-top,
+.style-alt .block-title {
+    border-bottom-color: #e8e1da;
+}
+
+.content-header-media {
+    border-top-color: #222222;
+}
+
+/* Main Highlight Colors */
+.text-primary,
+.text-primary:hover,
+a,
+a:hover,
+a:focus,
+.nav-pills > .active > a > .badge,
+.pagination > li > a,
+.pagination > li > span,
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link.btn-icon:hover,
+.btn-link.btn-icon:focus,
+.themed-color {
+    color: #e67e22;
+}
+
+.nav.navbar-nav-custom > li.open > a,
+.nav.navbar-nav-custom > li > a:hover,
+.nav.navbar-nav-custom > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus,
+a.sidebar-brand:hover,
+a.sidebar-brand:focus,
+a.sidebar-title:hover,
+a.sidebar-title:focus,
+#to-top:hover,
+.timeline-list .active .timeline-icon,
+.table-pricing.table-featured th,
+.table-pricing th.table-featured,
+.wizard-steps div.done span,
+.wizard-steps div.active span,
+.switch-primary input:checked + span,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.pager > li > a:hover,
+.pagination > li > a:hover,
+.label-primary,
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-multi .chosen-choices li.search-choice,
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active:hover.disabled,
+.datepicker table tr td span.active.disabled.disabled,
+.datepicker table tr td span.active.disabled:hover.disabled,
+.datepicker table tr td span.active[disabled],
+.datepicker table tr td span.active:hover[disabled],
+.datepicker table tr td span.active.disabled[disabled],
+.datepicker table tr td span.active.disabled:hover[disabled],
+.bootstrap-timepicker-widget table td a:hover,
+div.tagsinput span.tag,
+.slider-selection,
+.themed-background,
+.select2-results .select2-highlighted,
+.select2-container-multi .select2-choices .select2-search-choice {
+    background-color: #e67e22;
+}
+
+.timeline-list .active .timeline-icon,
+.form-control:focus,
+.wizard-steps span,
+.switch-primary span,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.pager > li > a:hover,
+.pagination > li > a:hover,
+.chosen-container .chosen-drop,
+.chosen-container-multi .chosen-choices li.search-choice,
+.chosen-container-active .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container-active .chosen-choices,
+div.tagsinput span.tag,
+.themed-border,
+.select2-drop-active,
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices,
+.select2-results .select2-highlighted,
+.select2-container-multi.select2-container-active .select2-choices {
+    border-color: #e67e22;
+}
+
+.nav .caret,
+.nav a:hover .caret,
+.nav a:focus .caret {
+    border-top-color: #e67e22;
+    border-bottom-color: #e67e22;
+}
+
+.sidebar-nav a.active,
+.sidebar-nav ul a.active,
+.sidebar-nav ul a.active:hover {
+    border-left-color: #e67e22;
+}
+
+.select2-drop.select2-drop-above.select2-drop-active {
+    border-top-color: #e67e22;
+}
+
+/* NProgress */
+#nprogress .bar {
+    background-color: #e67e22;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px #e67e22, 0 0 5px #e67e22;
+}
+
+#nprogress .spinner-icon {
+    border-top-color:  #e67e22;
+    border-left-color: #e67e22;
+}
+
+/* FullCalendar buttons */
+.fc-state-default {
+    background-color: #eba66a;
+    border-color: #e67e22;
+}
+
+.fc-state-hover,
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled {
+    background-color: #e67e22;
+}
+
+.fc-state-highlight {
+    background-color: #fcfbfa;
+}
+
+/* Specific for default & primary button */
+.btn-default {
+    background-color: #f5f2f0;
+    border-color: #e8e1da;
+    color: #4a392b;
+}
+
+.btn-default:hover {
+    background-color: #f2eeeb;
+    border-color: #cfc8c2;
+}
+
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .btn-default.dropdown-toggle {
+    background-color: #e5e2df;
+    border-color: #e5e2df;
+}
+
+.btn-default.disabled,
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled:active,
+.btn-default.disabled.active,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default:hover,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default.active {
+    background-color: #e5e2df;
+    border-color: #e5e2df;
+}
+
+.btn-primary {
+    background-color: #eba66a;
+    border-color: #e67e22;
+}
+
+.btn-primary.btn-alt {
+    color: #e67e22;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    border-color: #b35f15;
+    color: #ffffff;
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .btn-primary.dropdown-toggle {
+    background-color: #e67e22;
+    border-color: #e67e22;
+    color: #ffffff;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
