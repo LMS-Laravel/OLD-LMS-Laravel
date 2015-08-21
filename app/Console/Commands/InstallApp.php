@@ -43,7 +43,6 @@ class InstallApp extends Command
         $this->call('migrate');
         $this->call('db:seed');
         $this->call('module:migrate');
-        $this->call('countries:migration');
 
         foreach($modules as $module)
 
