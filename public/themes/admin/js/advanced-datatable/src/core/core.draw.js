@@ -194,8 +194,8 @@ function _fnBuildHead( oSettings )
 
 /**
  * Draw the header (or footer) element based on the column visibility states. The
- * methodology here is to use the layout array from _fnDetectHeader, modified for
- * the instantaneous column visibility, to construct the new layout. The grid is
+ * methodology here is to use the layouts array from _fnDetectHeader, modified for
+ * the instantaneous column visibility, to construct the new layouts. The grid is
  * traversed over cell at a time in a rows x columns grid fashion, although each 
  * cell insert can cover multiple elements in the grid - which is tracks using the
  * aApplied array. Cell inserts in the grid will only occur where there isn't
@@ -218,7 +218,7 @@ function _fnDrawHead( oSettings, aoSource, bIncludeHidden )
 		bIncludeHidden = false;
 	}
 
-	/* Make a copy of the master layout array, but without the visible columns in it */
+	/* Make a copy of the master layouts array, but without the visible columns in it */
 	for ( i=0, iLen=aoSource.length ; i<iLen ; i++ )
 	{
 		aoLocal[i] = aoSource[i].slice();
@@ -680,10 +680,10 @@ function _fnAddOptionsHtml ( oSettings )
 
 /**
  * Use the DOM source to create up an array of header cells. The idea here is to
- * create a layout grid (array) of rows x columns, which contains a reference
+ * create a layouts grid (array) of rows x columns, which contains a reference
  * to the cell that that point in the grid (regardless of col/rowspan), such that
  * any column / row could be removed and the new grid constructed
- *  @param array {object} aLayout Array to store the calculated layout in
+ *  @param array {object} aLayout Array to store the calculated layouts in
  *  @param {node} nThead The header/footer element for the table
  *  @memberof DataTable#oApi
  */
@@ -703,13 +703,13 @@ function _fnDetectHeader ( aLayout, nThead )
 
 	aLayout.splice( 0, aLayout.length );
 	
-	/* We know how many rows there are in the layout - so prep it */
+	/* We know how many rows there are in the layouts - so prep it */
 	for ( i=0, iLen=nTrs.length ; i<iLen ; i++ )
 	{
 		aLayout.push( [] );
 	}
 	
-	/* Calculate a layout array */
+	/* Calculate a layouts array */
 	for ( i=0, iLen=nTrs.length ; i<iLen ; i++ )
 	{
 		nTr = nTrs[i];
@@ -735,7 +735,7 @@ function _fnDetectHeader ( aLayout, nThead )
 				/* Cache calculation for unique columns */
 				bUnique = iColspan === 1 ? true : false;
 				
-				/* If there is col / rowspan, copy the information into the layout grid */
+				/* If there is col / rowspan, copy the information into the layouts grid */
 				for ( l=0 ; l<iColspan ; l++ )
 				{
 					for ( k=0 ; k<iRowspan ; k++ )
@@ -757,8 +757,8 @@ function _fnDetectHeader ( aLayout, nThead )
 /**
  * Get an array of unique th elements, one for each column
  *  @param {object} oSettings dataTables settings object
- *  @param {node} nHeader automatically detect the layout from this node - optional
- *  @param {array} aLayout thead/tfoot layout from _fnDetectHeader - optional
+ *  @param {node} nHeader automatically detect the layouts from this node - optional
+ *  @param {array} aLayout thead/tfoot layouts from _fnDetectHeader - optional
  *  @returns array {node} aReturn list of unique th's
  *  @memberof DataTable#oApi
  */

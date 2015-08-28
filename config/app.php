@@ -143,6 +143,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
 
         /*
          * Extern Service Providers...
@@ -154,6 +155,7 @@ return [
         Webpatser\Countries\CountriesServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Styde\Html\HtmlServiceProvider::class,
+        Pingpong\Themes\ThemesServiceProvider::class,
 
     ],
 
@@ -211,6 +213,7 @@ return [
         'Alert'     => Styde\Html\Facades\Alert::class,
         'Field'     => Styde\Html\Facades\Field::class,
         'Menu'      => Styde\Html\Facades\Menu::class,
+        'Theme'     => Pingpong\Themes\ThemeFacade::class,
     ],
 
 ];

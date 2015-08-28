@@ -1280,8 +1280,8 @@
 		
 		/**
 		 * Draw the header (or footer) element based on the column visibility states. The
-		 * methodology here is to use the layout array from _fnDetectHeader, modified for
-		 * the instantaneous column visibility, to construct the new layout. The grid is
+		 * methodology here is to use the layouts array from _fnDetectHeader, modified for
+		 * the instantaneous column visibility, to construct the new layouts. The grid is
 		 * traversed over cell at a time in a rows x columns grid fashion, although each 
 		 * cell insert can cover multiple elements in the grid - which is tracks using the
 		 * aApplied array. Cell inserts in the grid will only occur where there isn't
@@ -1304,7 +1304,7 @@
 				bIncludeHidden = false;
 			}
 		
-			/* Make a copy of the master layout array, but without the visible columns in it */
+			/* Make a copy of the master layouts array, but without the visible columns in it */
 			for ( i=0, iLen=aoSource.length ; i<iLen ; i++ )
 			{
 				aoLocal[i] = aoSource[i].slice();
@@ -1766,10 +1766,10 @@
 		
 		/**
 		 * Use the DOM source to create up an array of header cells. The idea here is to
-		 * create a layout grid (array) of rows x columns, which contains a reference
+		 * create a layouts grid (array) of rows x columns, which contains a reference
 		 * to the cell that that point in the grid (regardless of col/rowspan), such that
 		 * any column / row could be removed and the new grid constructed
-		 *  @param array {object} aLayout Array to store the calculated layout in
+		 *  @param array {object} aLayout Array to store the calculated layouts in
 		 *  @param {node} nThead The header/footer element for the table
 		 *  @memberof DataTable#oApi
 		 */
@@ -1789,13 +1789,13 @@
 		
 			aLayout.splice( 0, aLayout.length );
 			
-			/* We know how many rows there are in the layout - so prep it */
+			/* We know how many rows there are in the layouts - so prep it */
 			for ( i=0, iLen=nTrs.length ; i<iLen ; i++ )
 			{
 				aLayout.push( [] );
 			}
 			
-			/* Calculate a layout array */
+			/* Calculate a layouts array */
 			for ( i=0, iLen=nTrs.length ; i<iLen ; i++ )
 			{
 				nTr = nTrs[i];
@@ -1821,7 +1821,7 @@
 						/* Cache calculation for unique columns */
 						bUnique = iColspan === 1 ? true : false;
 						
-						/* If there is col / rowspan, copy the information into the layout grid */
+						/* If there is col / rowspan, copy the information into the layouts grid */
 						for ( l=0 ; l<iColspan ; l++ )
 						{
 							for ( k=0 ; k<iRowspan ; k++ )
@@ -1843,8 +1843,8 @@
 		/**
 		 * Get an array of unique th elements, one for each column
 		 *  @param {object} oSettings dataTables settings object
-		 *  @param {node} nHeader automatically detect the layout from this node - optional
-		 *  @param {array} aLayout thead/tfoot layout from _fnDetectHeader - optional
+		 *  @param {node} nHeader automatically detect the layouts from this node - optional
+		 *  @param {array} aLayout thead/tfoot layouts from _fnDetectHeader - optional
 		 *  @returns array {node} aReturn list of unique th's
 		 *  @memberof DataTable#oApi
 		 */
@@ -3322,17 +3322,17 @@
 			 * set the width based on the real headers
 			 */
 			
-			// Apply all styles in one pass. Invalidates layout only once because we don't read any 
+			// Apply all styles in one pass. Invalidates layouts only once because we don't read any
 			// DOM properties.
 			_fnApplyToChildren( zeroOut, anHeadSizers );
 			 
-			// Read all widths in next pass. Forces layout only once because we do not change 
+			// Read all widths in next pass. Forces layouts only once because we do not change
 			// any DOM properties.
 			_fnApplyToChildren( function(nSizer) {
 				aApplied.push( _fnStringToCss( $(nSizer).width() ) );
 			}, anHeadSizers );
 			 
-			// Apply all widths in final pass. Invalidates layout only once because we do not
+			// Apply all widths in final pass. Invalidates layouts only once because we do not
 			// read any DOM properties.
 			_fnApplyToChildren( function(nToSize, i) {
 				nToSize.style.width = aApplied[i];
@@ -6528,7 +6528,7 @@
 				
 				if ( oInit.sDom === DataTable.defaults.sDom && DataTable.defaults.sDom === "lfrtip" )
 				{
-					/* Set the DOM to use a layout suitable for jQuery UI's theming */
+					/* Set the DOM to use a layouts suitable for jQuery UI's theming */
 					oSettings.sDom = '<"H"lfr>t<"F"ip>';
 				}
 			}
@@ -8278,7 +8278,7 @@
 	
 		/**
 		 * When vertical (y) scrolling is enabled, DataTables will force the height of
-		 * the table's viewport to the given height at all times (useful for layout).
+		 * the table's viewport to the given height at all times (useful for layouts).
 		 * However, this can look odd when filtering data down to a small data set,
 		 * and the footer is left "floating" further down. This parameter (when
 		 * enabled) will cause DataTables to collapse the table's viewport down when
@@ -9690,7 +9690,7 @@
 	
 		/**
 		 * Enable horizontal scrolling. When a table is too wide to fit into a certain
-		 * layout, or you have a large number of columns in the table, you can enable
+		 * layouts, or you have a large number of columns in the table, you can enable
 		 * x-scrolling to show the table in a viewport, which can be scrolled. This
 		 * property can be any CSS unit, or a number (in which case it will be treated
 		 * as a pixel measurement).

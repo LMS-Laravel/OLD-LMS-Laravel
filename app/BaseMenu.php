@@ -1,6 +1,6 @@
 <?php namespace App;
 
-
+use Styde\Html\Facades\Menu;
 
 abstract class BaseMenu
 {
@@ -22,8 +22,11 @@ abstract class BaseMenu
     abstract function items();
 
 
+    /**
+     * @return mixed
+     */
     public function boot()
     {
-        return \Menu::make($this->items(), $this->class);
+        return Menu::make($this->items(), $this->class);
     }
 }

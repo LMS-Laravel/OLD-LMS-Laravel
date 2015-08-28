@@ -198,19 +198,19 @@ var App = function() {
         });
     };
 
-    /* Scrolls the page (static layout) or the sidebar scroll element (fixed header/sidebars layout) to a specific position - Used when a submenu opens */
+    /* Scrolls the page (static layouts) or the sidebar scroll element (fixed header/sidebars layouts) to a specific position - Used when a submenu opens */
     var handlePageScroll = function(sElem, sHeightDiff, sSpeed) {
         if (! page.hasClass('disable-menu-autoscroll')) {
             var elemScrollToHeight;
 
-            // If we have a static layout scroll the page
+            // If we have a static layouts scroll the page
             if (!header.hasClass('navbar-fixed-top') && !header.hasClass('navbar-fixed-bottom')) {
                 var elemOffsetTop   = sElem.offset().top;
 
                 elemScrollToHeight  = (((elemOffsetTop - sHeightDiff) > 0) ? (elemOffsetTop - sHeightDiff) : 0);
 
                 $('html, body').animate({scrollTop: elemScrollToHeight}, sSpeed);
-            } else { // If we have a fixed header/sidebars layout scroll the sidebar scroll element
+            } else { // If we have a fixed header/sidebars layouts scroll the sidebar scroll element
                 var sContainer      = sElem.parents('.sidebar-scroll');
                 var elemOffsetCon   = sElem.offset().top + Math.abs($('div:first', sContainer).offset().top);
 
@@ -342,7 +342,7 @@ var App = function() {
         var headerH         = header.outerHeight();
         var footerH         = footer.outerHeight();
 
-        // If we have a fixed sidebar/header layout or each sidebars’ height < window height
+        // If we have a fixed sidebar/header layouts or each sidebars’ height < window height
         if (header.hasClass('navbar-fixed-top') || header.hasClass('navbar-fixed-bottom') || ((sidebarH < windowH) && (sidebarAltH < windowH))) {
             if (page.hasClass('footer-fixed')) { // if footer is fixed don't remove its height
                 pageContent.css('min-height', windowH - headerH + 'px');

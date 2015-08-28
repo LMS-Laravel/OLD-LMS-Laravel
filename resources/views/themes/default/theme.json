@@ -1,0 +1,13 @@
+{
+	"name": "default",
+	"description": "Theme default for LMS-Laravle",
+	"author": [
+		{
+			"name": "Angel Kurten",
+			"email": "angelkurten@hotmail.com"
+		}
+	],
+	"files": [
+		"theme.php"
+	]
+}

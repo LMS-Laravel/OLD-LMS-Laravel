@@ -455,7 +455,7 @@ DataTable.defaults = {
 
 	/**
 	 * When vertical (y) scrolling is enabled, DataTables will force the height of
-	 * the table's viewport to the given height at all times (useful for layout).
+	 * the table's viewport to the given height at all times (useful for layouts).
 	 * However, this can look odd when filtering data down to a small data set,
 	 * and the footer is left "floating" further down. This parameter (when
 	 * enabled) will cause DataTables to collapse the table's viewport down when
@@ -1867,7 +1867,7 @@ DataTable.defaults = {
 
 	/**
 	 * Enable horizontal scrolling. When a table is too wide to fit into a certain
-	 * layout, or you have a large number of columns in the table, you can enable
+	 * layouts, or you have a large number of columns in the table, you can enable
 	 * x-scrolling to show the table in a viewport, which can be scrolled. This
 	 * property can be any CSS unit, or a number (in which case it will be treated
 	 * as a pixel measurement).

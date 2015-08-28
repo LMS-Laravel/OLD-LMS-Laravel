@@ -4592,7 +4592,7 @@ jQuery.extend({
 		// IE uses filters for opacity
 		if ( !jQuery.support.opacity && name === "opacity" ) {
 			if ( set ) {
-				// IE has trouble with opacity if it does not have layout
+				// IE has trouble with opacity if it does not have layouts
 				// Force it by setting the zoom level
 				style.zoom = 1;
 

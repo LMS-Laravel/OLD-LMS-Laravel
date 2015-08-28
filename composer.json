@@ -13,7 +13,8 @@
         "zizaco/entrust": "dev-laravel-5",
         "barryvdh/laravel-dompdf": "0.6.*",
         "prettus/l5-repository": "^2.1",
-        "styde/html": "~1.0"
+        "styde/html": "~1.0",
+        "pingpong/themes": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

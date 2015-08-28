@@ -177,7 +177,7 @@
 
 
 /*  ---------------------------------------------------------------
-    caption layout align left
+    caption layouts align left
     --------------------------------------------------------------- */
 .cbp-caption-pushTop .cbp-l-caption-alignLeft .cbp-l-caption-body,
 .cbp-caption-pushDown .cbp-l-caption-alignLeft .cbp-l-caption-body,
@@ -242,12 +242,12 @@
             transform: translateY(0);
 }
 /* <<< minimal style caption */
-/*  END - caption layout align left */
+/*  END - caption layouts align left */
 
 
 
 /*  ---------------------------------------------------------------
-    caption layout center vertically and horizontally
+    caption layouts center vertically and horizontally
     --------------------------------------------------------------- */
 .cbp-l-caption-alignCenter {
     display: table;
@@ -300,7 +300,7 @@
     /* @editable properties */
     left: 0;
 }
-/*  END - caption layout center vertically and horizontally */
+/*  END - caption layouts center vertically and horizontally */
 
 
 /*  ---------------------------------------------------------------
@@ -2828,7 +2828,7 @@
 
 
 /*  ---------------------------------------------------------------
-    layout filters button
+    layouts filters button
     --------------------------------------------------------------- */
 .cbp-l-filters-button {
     /* @editable properties */
@@ -2911,12 +2911,12 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
 }
-/*  END - layout filters buttons */
+/*  END - layouts filters buttons */
 
 
 
 /*  ---------------------------------------------------------------
-    layout filters dropdown
+    layouts filters dropdown
     --------------------------------------------------------------- */
 .cbp-l-filters-dropdown {
     /* @editable properties */
@@ -2996,12 +2996,12 @@
     /* @editable properties */
     color: #e6e6e6;
 }
-/*  END - layout filters dropdown */
+/*  END - layouts filters dropdown */
 
 
 
 /*  ---------------------------------------------------------------
-    layout filters alignLeft
+    layouts filters alignLeft
     --------------------------------------------------------------- */
 .cbp-l-filters-alignLeft {
     /* @editable properties */
@@ -3042,12 +3042,12 @@
 .cbp-l-filters-alignLeft .cbp-filter-counter {
     display: inline;
 }
-/*  END - layout filters alignLeft */
+/*  END - layouts filters alignLeft */
 
 
 
 /*  ---------------------------------------------------------------
-    layout filters alignCenter
+    layouts filters alignCenter
     --------------------------------------------------------------- */
 .cbp-l-filters-alignCenter {
     /* @editable properties */
@@ -3129,12 +3129,12 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
 }
-/*  END - layout filters alignCenter */
+/*  END - layouts filters alignCenter */
 
 
 
 /*  ---------------------------------------------------------------
-    layout filters alignRight
+    layouts filters alignRight
     --------------------------------------------------------------- */
 .cbp-l-filters-alignRight {
     /* @editable properties */
@@ -3220,12 +3220,12 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
 }
-/*  END - layout filters alignRight */
+/*  END - layouts filters alignRight */
 
 
 
 /*  ---------------------------------------------------------------
-    layout filters list
+    layouts filters list
     --------------------------------------------------------------- */
 .cbp-l-filters-list {
     /* @editable properties */
@@ -3278,12 +3278,12 @@
 .cbp-l-filters-list .cbp-filter-counter {
     display: inline;
 }
-/*  END - layout filters list */
+/*  END - layouts filters list */
 
 
 
 /*  ---------------------------------------------------------------
-    layout grid projects
+    layouts grid projects
     --------------------------------------------------------------- */
 .cbp-l-grid-projects {
     visibility: hidden;
@@ -3391,12 +3391,12 @@
     bottom: 50px;
 }
 /* <<< override overlayBottomReveal caption */
-/*  END - layout grid projects */
+/*  END - layouts grid projects */
 
 
 
 /*  ---------------------------------------------------------------
-    layout grid gallery
+    layouts grid gallery
     --------------------------------------------------------------- */
 .cbp-l-grid-gallery {
     visibility: hidden;
@@ -3408,12 +3408,12 @@
     width: 320px;
     height: 236px;
 }
-/*  END - layout grid gallery */
+/*  END - layouts grid gallery */
 
 
 
 /*  ---------------------------------------------------------------
-    layout grid team
+    layouts grid team
     --------------------------------------------------------------- */
 .cbp-l-grid-team {
     visibility: hidden;
@@ -3531,12 +3531,12 @@
     bottom: 44px;
 }
 /* <<< override overlayBottomReveal caption */
-/*  END - layout grid team */
+/*  END - layouts grid team */
 
 
 
 /*  ---------------------------------------------------------------
-    layout grid full screen
+    layouts grid full screen
     --------------------------------------------------------------- */
 .cbp-l-grid-fullScreen {
     visibility: hidden;
@@ -3548,12 +3548,12 @@
     width: 350px;
     height: 263px;
 }
-/*  END - layout grid full screen */
+/*  END - layouts grid full screen */
 
 
 
 /*  ---------------------------------------------------------------
-    layout grid masonry
+    layouts grid masonry
     --------------------------------------------------------------- */
 .cbp-l-grid-masonry {
     visibility: hidden;
@@ -3576,12 +3576,12 @@
     /* @editable properties */
     height: 415px;
 }
-/*  END - layout grid masonry */
+/*  END - layouts grid masonry */
 
 
 
 /*  ---------------------------------------------------------------
-    layout gid blog
+    layouts gid blog
     --------------------------------------------------------------- */
 .cbp-l-grid-blog {
     visibility: hidden;
@@ -3650,12 +3650,12 @@
     font: 13px/16px "Roboto Slab", sans-serif;
     color: #787878;
 }
-/*  END - layout gid blog */
+/*  END - layouts gid blog */
 
 
 
 /*  ---------------------------------------------------------------
-    layout load more button
+    layouts load more button
     --------------------------------------------------------------- */
 .cbp-l-loadMore-button {
     /* @editable properties */
@@ -3685,12 +3685,12 @@
     cursor: default;
     color: #B0B0B0;
 }
-/*  END - layout load more button */
+/*  END - layouts load more button */
 
 
 
 /*  ---------------------------------------------------------------
-    layout load more text
+    layouts load more text
     --------------------------------------------------------------- */
 .cbp-l-loadMore-text {
     /* @editable properties */
@@ -3710,7 +3710,7 @@
     /* @editable properties */
     color: #5D5D5D;
 }
-/*  END - layout load more text */
+/*  END - layouts load more text */
 
 
 /*  ---------------------------------------------------------------

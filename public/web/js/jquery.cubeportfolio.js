@@ -2636,7 +2636,7 @@
                         t._responsiveLayout();
                     }
 
-                    // make layout
+                    // make layouts
                     t._layout();
 
                     // need css for positionate the blocks
@@ -2795,13 +2795,13 @@
 
 
         /**
-         * Build the layout
+         * Build the layouts
          */
         _layout: function() {
 
             var t = this;
 
-            // reset layout
+            // reset layouts
             t._layoutReset();
 
             t.blocksAvailable.each(function(index, el) {
@@ -2844,7 +2844,7 @@
 
 
         /**
-         * Reset the layout
+         * Reset the layouts
          */
         _layoutReset: function() {
 
@@ -3126,7 +3126,7 @@
 
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -3189,7 +3189,7 @@
 
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -3258,7 +3258,7 @@
                 }
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -3328,7 +3328,7 @@
 
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -3398,7 +3398,7 @@
 
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -3462,7 +3462,7 @@
 
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -3545,7 +3545,7 @@
 
                 }
 
-                // call layout
+                // call layouts
                 t._layout();
 
                 // trigger style queue and the animations
@@ -3655,7 +3655,7 @@
 
                 }
 
-                // call layout
+                // call layouts
                 t._layout();
 
                 // trigger style queue and the animations
@@ -3759,7 +3759,7 @@
 
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             if (toAnimate.length) {
@@ -3846,7 +3846,7 @@
 
             t.blocksAvailable = ulChildren.filter(filter);
 
-            // call layout
+            // call layouts
             t._layout();
 
             ulTohide[t.transition]({
@@ -3936,7 +3936,7 @@
 
             t.blocksAvailable = ulChildren.filter(filter);
 
-            // call layout
+            // call layouts
             t._layout();
 
             ulTohide[t.transition]({
@@ -4025,7 +4025,7 @@
 
             t.blocksAvailable = ulChildren.filter(filter);
 
-            // call layout
+            // call layouts
             t._layout();
 
             ulTohide[t.transition]({
@@ -4120,7 +4120,7 @@
             t.blocksAvailable.css('opacity', 1);
             t.blocksAvailable.removeClass('cbp-item-hidden');
 
-            // call layout
+            // call layouts
             t._layout();
 
             ulTohide[t.transition]({
@@ -4269,7 +4269,7 @@
             });
             t.blocksAvailable.removeClass('cbp-item-hidden');
 
-            // call layout
+            // call layouts
             t._layout();
 
             if (t.transition === 'css') {
@@ -4557,7 +4557,7 @@
 
             slideIn = t.blocksAvailable;
 
-            // call layout
+            // call layouts
             t._layout();
 
             if (t.transition === 'css') {
@@ -4972,7 +4972,7 @@
                 t._responsiveLayout();
             }
 
-            // call layout
+            // call layouts
             t._layout();
 
             // trigger style queue and the animations
@@ -5099,7 +5099,7 @@
         animationType: 'fadeOut',
 
         /**
-         *  Adjust the layout grid
+         *  Adjust the layouts grid
          *  Values: - default (no adjustment applied)
          *          - alignCenter (align the grid on center of the page)
          *          - responsive (use a fluid grid to resize the grid)

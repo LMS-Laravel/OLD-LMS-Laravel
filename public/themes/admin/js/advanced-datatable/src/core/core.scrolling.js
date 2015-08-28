@@ -311,17 +311,17 @@ function _fnScrollDraw ( o )
 	 * set the width based on the real headers
 	 */
 	
-	// Apply all styles in one pass. Invalidates layout only once because we don't read any 
+	// Apply all styles in one pass. Invalidates layouts only once because we don't read any
 	// DOM properties.
 	_fnApplyToChildren( zeroOut, anHeadSizers );
 	 
-	// Read all widths in next pass. Forces layout only once because we do not change 
+	// Read all widths in next pass. Forces layouts only once because we do not change
 	// any DOM properties.
 	_fnApplyToChildren( function(nSizer) {
 		aApplied.push( _fnStringToCss( $(nSizer).width() ) );
 	}, anHeadSizers );
 	 
-	// Apply all widths in final pass. Invalidates layout only once because we do not
+	// Apply all widths in final pass. Invalidates layouts only once because we do not
 	// read any DOM properties.
 	_fnApplyToChildren( function(nToSize, i) {
 		nToSize.style.width = aApplied[i];

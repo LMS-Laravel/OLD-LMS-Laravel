@@ -40,7 +40,7 @@ class PrincipalMenu extends BaseMenu
             ],
             'platform'  => [
                 'title' => trans('dashboard::menus.principal.platform'),
-                'url'   => '#',
+                'url'   => route('auth.loginGet'),
                 'data-scroll' => true
             ],
             'contact'  => [

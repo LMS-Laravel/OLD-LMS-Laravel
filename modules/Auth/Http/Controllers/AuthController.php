@@ -7,20 +7,26 @@ use Pingpong\Modules\Routing\Controller;
 
 class AuthController extends Controller {
 
-    public function __construct() {
+    protected $loginPath;
+    protected $redirectPath;
+    protected $redirectTo;
 
+    public function __construct() {
+        $this->redirectPath = route('dashboard.learning');
+        $this->redirectTo = $this->redirectPath;
+        $this->loginPath = route('auth.loginGet');
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
     public function index() {
 
-        return view('auth::login');
+        return \Theme::view('auth.login');
     }
 
     public function postLogin(Request $request) {
 
         $this->validate($request, [
-            Config::get('auth.login') => 'required|email', 'password' => 'required',
+            Config::get('auth.login') => 'required', 'password' => 'required',
         ]);
 
         $credentials = $this->getCredentials($request);
@@ -45,7 +51,7 @@ class AuthController extends Controller {
 
     private function loginPath() {
 
-        return property_exists($this, 'loginPath') ? $this->loginPath : '/';
+        return property_exists($this, 'loginPath') ? $this->loginPath : '/auth/login';
     }
 
     private function getCredentials(Request $request) {
@@ -59,7 +65,7 @@ class AuthController extends Controller {
             return $this->redirectPath;
         }
 
-        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/dashboard';
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/learning';
     }
 
     private function getFailedLoginMessage() {
