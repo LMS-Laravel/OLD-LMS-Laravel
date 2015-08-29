@@ -16,7 +16,8 @@
         "styde/html": "~1.0",
         "pingpong/themes": "^2.1",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
-        "thomaswelton/laravel-gravatar": "~1.0"
+        "thomaswelton/laravel-gravatar": "~1.0",
+        "chencha/share": "^5.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

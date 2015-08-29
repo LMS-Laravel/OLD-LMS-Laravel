@@ -21,5 +21,15 @@ class CourseController extends Controller {
 		$courses = $this->course->all();
 		return \Theme::view('courses/learning/index', compact('courses'));
 	}
+
+	public function show($id)
+	{
+		$course = $this->course->find($id);
+		$modules = $course->modules();
+		$courses = $this->course->all();
+		$sharer = \Share::load(route('learning.course.show', $course->id), trans('course::show.messages.sharer', ['name'=>$course->name]))->services('facebook', 'gplus', 'twitter');
+
+		return \Theme::view('courses/learning/show', compact('course', 'modules', 'sharer', 'courses'));
+	}
 	
 }

@@ -6,7 +6,7 @@
         <div class="sidebar-content">
             <!-- Brand -->
             <a href="{{ route('dashboard.learning') }}" class="sidebar-brand">
-                <i class="gi gi-flash"></i><strong>PHP</strong>Academy <span style="font-size: 10px;">beta</span>
+                <i class="gi gi-flash"></i><strong>{{ $data['name'] }}</strong> <span style="font-size: 10px;">beta</span>
             </a>
             <!-- END Brand -->
 

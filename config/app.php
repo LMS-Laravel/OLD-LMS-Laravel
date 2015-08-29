@@ -158,7 +158,8 @@ return [
         Styde\Html\HtmlServiceProvider::class,
         Pingpong\Themes\ThemesServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
-        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
+        Chencha\Share\ShareServiceProvider::class
 
     ],
 
@@ -218,7 +219,8 @@ return [
         'Menu'      => Styde\Html\Facades\Menu::class,
         'Theme'     => Pingpong\Themes\ThemeFacade::class,
         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
-        'Gravatar'  => Thomaswelton\LaravelGravatar\Facades\Gravatar::class
+        'Gravatar'  => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
+        'Share'     => Chencha\Share\ShareFacade::class
     ],
 
 ];

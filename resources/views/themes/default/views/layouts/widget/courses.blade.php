@@ -12,16 +12,13 @@
             @foreach($courses as $course)
             <tr>
                 <td>
-                    <a href="{{{ route('view_course_get', $course->id) }}}">{{{ $course->name }}}</a><br>
-                    <small>
-                    {{{$course->value_current}}}
-                    </small>
+                    <a href="{{ route('learning.course.show', $course->id) }}">{{ $course->name }}</a><br>
                 </td>
                 <td class="text-center" style="width: 70px;">
                     <div class="btn-group btn-group-xs">
                         <!-- <a href="javascript:void(0)" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a> -->
                         <!-- <a href="javascript:void(0)" class="btn btn-default"><i class="fa fa-heart text-danger"></i></a>-->
-                        <a href="{{{ route('view_course_get', $course->id) }}}" class="btn btn-default"><i class="fa fa-university"></i></i></a>
+                        <a href="{{ route('learning.course.show', $course->id) }}" class="btn btn-default"><i class="fa fa-university"></i></i></a>
                     </div>
                 </td>
             </tr>
