@@ -60,11 +60,11 @@
             <!-- Page Container -->
             <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations footer-fixed">
 
-                @include('layout/sidebar')
+                @include('themes/default/views/layouts/sidebar')
                 <!-- Main Container -->
                 <div id="main-container">
 
-                    @include('layout/header')
+                    @include('themes/default/views/layouts/header')
 
                     <!-- Page content -->
                     <div id="page-content">
@@ -102,30 +102,30 @@
 
                         <!-- Modal Body -->
                         <div class="modal-body">
-                            {{ Form::open(['route' => 'updated_account', 'id'=>'form-update-account', 'method' => 'POST', 'class' => 'form-horizontal form-bordered']) }}
+                            {{ Form::open(['route' => 'dashboard.learning', 'id'=>'form-update-account', 'method' => 'POST', 'class' => 'form-horizontal form-bordered']) }}
                                 <fieldset>
                                     <legend>Informacion de la cuenta</legend>
                                     <div class="form-group">
                                         <label class="col-md-2 control-label">1er Nombre</label>
                                         <div class="col-md-4">
-                                            <input type="text" id="first_name" name="first_name" class="form-control" value="{{{ $user->first_name }}}">
+                                            <input type="text" id="first_name" name="first_name" class="form-control" value="{{{ Auth::user()->first_name }}}">
                                         </div>
 
                                         <label class="col-md-2 control-label">1er Apellido</label>
                                         <div class="col-md-4">
-                                            <input type="text" id="last_name" name="last_name" class="form-control" value="{{{ $user->last_name }}}">
+                                            <input type="text" id="last_name" name="last_name" class="form-control" value="{{{ Auth::user()->last_name }}}">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-4 control-label">Usuario</label>
                                         <div class="col-md-8">
-                                            <p class="form-control-static">{{{ $user->username }}}</p>
+                                            <p class="form-control-static">{{{ Auth::user()->username }}}</p>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="user-settings-email">Email</label>
                                         <div class="col-md-8">
-                                            <input type="email" id="email" name="email" class="form-control" value="{{{ $user->email }}}">
+                                            <input type="email" id="email" name="email" class="form-control" value="{{{ Auth::user()->email }}}">
                                         </div>
                                     </div>
                                     <!--<div class="form-group">

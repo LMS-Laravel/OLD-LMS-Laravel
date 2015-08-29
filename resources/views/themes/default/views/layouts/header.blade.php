@@ -14,7 +14,7 @@
     <!-- END Left Header Navigation -->
 
     <!-- Search Form -->
-    <form action="{{route('learning') }}" method="get" class="navbar-form-custom" role="search">
+    <form action="{{route('dashboard.learning') }}" method="get" class="navbar-form-custom" role="search">
        <!--<div class="form-group">
             <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Buscar..">
         </div>-->
@@ -27,12 +27,12 @@
         <!-- User Dropdown -->
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="{{ Gravatar::src($user->email) }}" alt="avatar"> <i class="fa fa-angle-down"></i>
+                <img src="{{ Gravatar::src(Auth::user()->email) }}" alt="avatar"> <i class="fa fa-angle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                 <li class="dropdown-header text-center">Cuenta</li>
                 <li>
-                    <a href="{{ route('profile', $user->id) }}">
+                    <a href="#">
                         <i class="fa fa-user fa-fw pull-right"></i>
                         Perfil
                     </a>
@@ -44,7 +44,7 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                    <a href="{{ route('logout') }}"><i class="fa fa-ban fa-fw pull-right"></i> Salir</a>
+                    <a href="#"><i class="fa fa-ban fa-fw pull-right"></i> Salir</a>
                 </li>
             </ul>
         </li>

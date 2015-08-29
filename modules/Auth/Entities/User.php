@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Webpatser\Countries\Countries;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
+use Carbon\Carbon;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
@@ -24,5 +26,22 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public function roles() {
 
         return $this->belongsToMany('Modules\Auth\Entities\Role', 'role_user');
+    }
+
+    public function country(){
+
+        return $this->belongsTo(Countries::class);
+    }
+
+    public function getFullNameAttribute()
+    {
+
+        return $this->first_name .' '. $this->last_name;
+    }
+
+    public function getCreatedAtAttribute($attr)
+    {
+
+        return Carbon::parse($attr)->toFormattedDateString(); //Change the format to whichever you desire
     }
 }

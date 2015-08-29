@@ -158,6 +158,7 @@ return [
         Styde\Html\HtmlServiceProvider::class,
         Pingpong\Themes\ThemesServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class
 
     ],
 
@@ -216,7 +217,8 @@ return [
         'Field'     => Styde\Html\Facades\Field::class,
         'Menu'      => Styde\Html\Facades\Menu::class,
         'Theme'     => Pingpong\Themes\ThemeFacade::class,
-        'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
+        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+        'Gravatar'  => Thomaswelton\LaravelGravatar\Facades\Gravatar::class
     ],
 
 ];

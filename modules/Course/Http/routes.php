@@ -1,18 +1,18 @@
 <?php
 
-Route::group(['prefix' => 'learning'], function(){
+Route::group(['prefix' => 'learning', 'namespace' => 'Modules\Course\Http\Controllers\Learning'], function(){
 
-    Route::get('/', 'CourseController@index');
+    Route::get('/', ['as'=>'dashboard.learning', 'uses'=>'CourseController@index']);
 
-	Route::group(['prefix' => 'course', 'namespace' => 'Modules\Course\Http\Controllers'], function()
-	{
-		Route::get('/', 'CourseController@index');
-	});
+    Route::resource('course', 'CourseController',
+        ['except' => ['create', 'store', 'update', 'destroy']]
+    );
 });
 
-Route::group(['prefix' => 'admin'], function(){
-    Route::group(['prefix' => 'course', 'namespace' => 'Modules\Course\Http\Controllers'], function()
-    {
-        Route::get('/', 'CourseController@index');
-    });
+Route::group(['prefix' => 'admin', 'namespace' => 'Modules\Course\Http\Controllers\Admin'], function(){
+
+    Route::resource('course', 'CourseController',
+        ['except' => ['create', 'store', 'update', 'destroy']]
+    );
+
 });
