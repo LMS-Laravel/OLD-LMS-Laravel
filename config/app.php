@@ -145,6 +145,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
 
+
         /*
          * Extern Service Providers...
          */
@@ -156,6 +157,7 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Styde\Html\HtmlServiceProvider::class,
         Pingpong\Themes\ThemesServiceProvider::class,
+        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
 
     ],
 
@@ -214,6 +216,7 @@ return [
         'Field'     => Styde\Html\Facades\Field::class,
         'Menu'      => Styde\Html\Facades\Menu::class,
         'Theme'     => Pingpong\Themes\ThemeFacade::class,
+        'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
     ],
 
 ];
