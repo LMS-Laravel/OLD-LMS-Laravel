@@ -1,10 +1,10 @@
 {
     "name": "Course",
     "alias": "course",
-    "description": "",
+    "description": "Module for courses LMS-Laravel",
     "keywords": [],
     "active": 1,
-    "order": 0,
+    "order": 2,
     "providers": [
         "Modules\\Course\\Providers\\CourseServiceProvider"
     ],
