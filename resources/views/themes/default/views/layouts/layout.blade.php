@@ -102,7 +102,7 @@
 
                         <!-- Modal Body -->
                         <div class="modal-body">
-                            {{ Form::open(['route' => 'dashboard.learning', 'id'=>'form-update-account', 'method' => 'POST', 'class' => 'form-horizontal form-bordered']) }}
+                            {!! Form::open(['route' => 'dashboard.learning', 'id'=>'form-update-account', 'method' => 'POST', 'class' => 'form-horizontal form-bordered']) !!}
                                 <fieldset>
                                     <legend>Informacion de la cuenta</legend>
                                     <div class="form-group">
@@ -159,7 +159,7 @@
                                         <button type="submit" class="btn btn-sm btn-primary">Actualizar</button>
                                     </div>
                                 </div>
-                            {{ Form::close() }}
+                            {!! Form::close()  !!}
                         </div>
                         <!-- END Modal Body -->
                     </div>

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Modules\Course\Entities\Lesson;
 use Webpatser\Countries\Countries;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Carbon\Carbon;
@@ -43,5 +44,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
 
         return Carbon::parse($attr)->toFormattedDateString(); //Change the format to whichever you desire
+    }
+
+    public function lessons()
+    {
+        return $this->belongsToMany(Lesson::class)->withTimestamps();
     }
 }
