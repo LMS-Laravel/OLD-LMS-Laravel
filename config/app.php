@@ -144,6 +144,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
+        App\Providers\LocalEnvironmentServiceProvider::class,
 
 
         /*
@@ -159,7 +160,7 @@ return [
         Pingpong\Themes\ThemesServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
-        Chencha\Share\ShareServiceProvider::class
+        Chencha\Share\ShareServiceProvider::class,
 
     ],
 
