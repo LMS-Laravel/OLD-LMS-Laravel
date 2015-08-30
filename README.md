@@ -1,6 +1,5 @@
 # LMS-Laravel
-[![License](https://poser.pugx.org/angelkurten/lms-laravel/license.svg)](https://packagist.org/packages/angelkurten/lms-laravel)
-[![Total Downloads](https://img.shields.io/packagist/dt/angekurten/lms-laravel.svg)](https://packagist.org/packages/angelkurten/lms-laravel)
+[![Latest Stable Version](https://poser.pugx.org/angelkurten/lms-laravel/v/stable)](https://packagist.org/packages/angelkurten/lms-laravel) [![Total Downloads](https://poser.pugx.org/angelkurten/lms-laravel/downloads)](https://packagist.org/packages/angelkurten/lms-laravel) [![Latest Unstable Version](https://poser.pugx.org/angelkurten/lms-laravel/v/unstable)](https://packagist.org/packages/angelkurten/lms-laravel) [![License](https://poser.pugx.org/angelkurten/lms-laravel/license)](https://packagist.org/packages/angelkurten/lms-laravel)
 
 LMS-laravel is a management system of educational content, want to facilitate the creation of a platform simple and intuitive
 
