@@ -5,20 +5,18 @@
 <div class="content-header">
     <div class="header-section">
         <h1>
-            <i class="fa fa-globe"></i>Bienvenido al curso <strong>{{ $course->name }}</strong>
+            <i class="fa fa-globe"></i>{{ trans('course::show.messages.welcome') }}<strong>{{ $course->name }}</strong>
             <br/>
             <small>{{ $course->description }}</small>
             <br>
-            <small>{{ count($modules) }} Modulos</small>
+            <small>{{ count($modules) }} {{ trans('course::show.messages.modules') }}</small>
             <br/>
             {!! Alert::render() !!}
         </h1>
     </div>
 </div>
-<ul class="breadcrumb breadcrumb-top">
-    <li><a href="{{ route('dashboard.learning') }}">Cursos</a></li>
-    <li>{{ $course->name }}</li>
-</ul>
+
+{!! Breadcrumbs::render('course_learning', $course) !!}
 <!-- END Courses Header -->
 
 <!-- Main Row -->
@@ -33,12 +31,12 @@
                 <!-- Widget Header -->
                 <div class="widget-header text-center themed-background-dark">
                     <div class="widget-options">
-                        <button class="btn btn-xs btn-default" data-toggle="tooltip" title="Favorito!"><i class="fa fa-heart text-danger"></i></button>
+                        <button class="btn btn-xs btn-default" data-toggle="tooltip" title="{{ trans('course::show.btn.favorite') }}!"><i class="fa fa-heart text-danger"></i></button>
                     </div>
                     <h3 class="widget-content-light">
                         {{ $course->name }}
                         <br>
-                        <small>Responsable: <a href="#">{{ $course->teacher->full_name }}</a></small>
+                        <small>{{ trans('course::show.messages.teacher') }}: <a href="#">{{ $course->teacher->full_name }}</a></small>
                     </h3>
                 </div>
                 <!-- END Widget Header -->
@@ -49,10 +47,10 @@
                         <span class="widget-icon themed-background-dark-{{ $colors[$course->level - 1] }}"><i class="fa fa-code"></i></span>
                     </a>
                     <a href="javascript:void(0)" class="btn btn-sm btn-default pull-right">
-                        {{ count($modules) }} Modulos
+                        {{ count($modules) }} {{ trans('course::show.btn.module') }}
                     </a>
                     <a href="javascript:void(0)" class="btn btn-sm btn-success">
-                    {{$course->value_current}}
+                    <i class="fa fa-book"></i>
                     </a>
                     <hr>
                     <!-- Lessons -->
@@ -66,18 +64,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($module->classes_active as $class)
+                            @foreach($module->lessons as $lesson)
                             <tr>
-                                <td><a href="{{ route('view_class_get', $class->id) }}"><i class="fa fa-ellipsis-h"></i>  {{ $class->title }}</a></td>
+                                <td><a href="{{ route('learning.lesson.show', $lesson->id) }}"><i class="fa fa-ellipsis-h"></i>  {{ $lesson->title }}</a></td>
                                 <td class="text-right">
-                                    @if($class->view == true)
+                                    @if($lesson->view == true)
                                     <a class="btn btn-xs btn-info"  data-toggle="tooltip" title="Ya la viste" href="#"><i class="fa fa-check"></i></a>
                                     @endif
-                                    <a class="btn btn-xs btn-success" href="{{ route('view_class_get', $class->id) }}">
-                                        @if($class->type == 1)
-                                        <i class="fa fa-youtube-play"  data-toggle="tooltip" title="Es video"></i>
+                                    <a class="btn btn-xs btn-success" href="{{ route('learning.lesson.show', $lesson->id) }}">
+                                        @if($lesson->type == 1)
+                                        <i class="fa fa-youtube-play"  data-toggle="tooltip" title="{{ trans('course::show.btn.video') }}"></i>
                                         @else
-                                        <i class="fa fa-book"  data-toggle="tooltip" title="Es Nota"></i>
+                                        <i class="fa fa-book"  data-toggle="tooltip" title="{{ trans('course::show.btn.note') }}"></i>
                                         @endif
                                     </a>
                                 </td>

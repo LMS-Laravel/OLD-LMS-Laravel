@@ -24,8 +24,8 @@ class CourseController extends Controller {
 
 	public function show($id)
 	{
-		$course = $this->course->find($id);
-		$modules = $course->modules();
+		$course = $this->course->with(['modules'])->find($id);
+		$modules = $course->modules;
 		$courses = $this->course->all();
 		$sharer = \Share::load(route('learning.course.show', $course->id), trans('course::show.messages.sharer', ['name'=>$course->name]))->services('facebook', 'gplus', 'twitter');
 

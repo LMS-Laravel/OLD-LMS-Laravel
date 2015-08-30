@@ -78,7 +78,7 @@
                             Desarrollado con <i class="fa fa-heart text-danger"></i> por <a href="https://www.facebook.com/angel.kurten" target="_blank">Angel Kurten</a>
                         </div>
                         <div class="pull-left">
-                            <span id="year-copy"></span> &copy; <a href="https://www.facebook.com/angel.kurten" target="_blank">PHP Virtual Academy</a>
+                            <span id="year-copy"></span> &copy; <a href="https://www.facebook.com/angel.kurten" target="_blank">{{ $data['name'] }}</a>
                         </div>
                     </footer>
                     <!-- END Footer -->

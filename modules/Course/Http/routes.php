@@ -7,6 +7,10 @@ Route::group(['prefix' => 'learning', 'namespace' => 'Modules\Course\Http\Contro
     Route::resource('course', 'CourseController',
         ['except' => ['create', 'store', 'update', 'destroy']]
     );
+
+    Route::resource('lesson', 'LessonController',
+        ['except' => ['index','create', 'store', 'update', 'destroy']]
+    );
 });
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Modules\Course\Http\Controllers\Admin'], function(){

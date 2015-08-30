@@ -19,7 +19,7 @@ class InstallApp extends Command
      *
      * @var string
      */
-    protected $description = 'Hace una migración y ejecuta los seeders de la aplicación';
+    protected $description = 'Comando para ejecutar la instalacion de LMS-Laravel';
 
     /**
      * Create a new command instance.
