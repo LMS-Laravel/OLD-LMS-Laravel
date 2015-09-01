@@ -22,6 +22,11 @@ class Lesson extends Model {
         return $this->belongsToMany(User::class)->withTimestamps();
     }
 
+    public function comments()
+    {
+        return $this->hasMany(Comments::class);
+    }
+
     public function getViewAttribute()
     {
         $status = $this::whereHas('students', function($q)

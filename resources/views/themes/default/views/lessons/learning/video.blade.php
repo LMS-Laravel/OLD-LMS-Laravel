@@ -4,17 +4,13 @@
 <div class="content-header">
     <div class="header-section">
         <h1>
-            <i class="fa fa-globe"></i>Bienvenido a la clase <strong>{{ $lesson->title }}</strong>
+            <i class="fa fa-globe"></i>{{ trans('course::lesson/show.messages.welcome') }} <strong>{{ $lesson->title }}</strong>
             <br>
-            <small>Curso: {{ $lesson->module->course->name }}</small>
+            <small>{{ trans('course::lesson/show.messages.course') }}: {{ $lesson->module->course->name }}</small>
         </h1>
     </div>
 </div>
-<ul class="breadcrumb breadcrumb-top">
-    <li><a href="{{ route('dashboard.learning') }}">Cursos</a></li>
-    <li><a href="{{ route('learning.course.show', $lesson->module->course->id) }}">{{ $lesson->module->course->name }}</a></li>
-    <li>{{ $lesson->title }}</li>
-</ul>
+{!! Breadcrumbs::render('lesson_learning', $lesson->module->course, $lesson) !!}
 <!-- END Courses Header -->
 
 <!-- Main Row -->
@@ -26,11 +22,11 @@
                 <!-- Widget Header -->
                 <div class="widget-header text-center themed-background-dark">
                     <div class="widget-options">
-                        <button class="btn btn-xs btn-default" data-toggle="tooltip" title="Favorito!"><i class="fa fa-heart text-danger"></i></button>
+                        <button class="btn btn-xs btn-default" data-toggle="tooltip" title="{{ trans('course::lesson/show.btn.favorite') }}"><i class="fa fa-heart text-danger"></i></button>
                     </div>
                     <h3 class="widget-content-light">
                         {{ $lesson->title }}<br>
-                        <small>Profesor: {{ $lesson->teacher->full_name }}</small>
+                        <small>{{ trans('course::lesson/show.messages.teacher') }}: {{ $lesson->teacher->full_name }}</small>
                     </h3>
                 </div>
                 <!-- END Widget Header -->
@@ -41,7 +37,7 @@
                         <span class="widget-icon themed-background"><i class="fa fa-bank"></i></span>
                     </a>
                     <!-- <a href="{{ route('learning.course.show', $lesson->module->course->id) }}" class="btn btn-sm btn-default pull-right">Ir al curso <i class="fa fa-chevron-right"></i></a> -->
-                    <a href="{{ route('learning.course.show', $lesson->module->course->id) }}" class="btn btn-sm btn-default"><i class="fa fa-chevron-left"></i> Ir al curso</a>
+                    <a href="{{ route('learning.course.show', $lesson->module->course->id) }}" class="btn btn-sm btn-default"><i class="fa fa-chevron-left"></i> {{ trans('course::lesson/show.btn.go-course') }}</a>
                     <hr>
                     <!-- Lesson Content -->
                     <h3 class="sub-header">{{ $lesson->title }}</h3>
@@ -61,7 +57,7 @@
 
                     <!-- END Lesson Content -->
                     <hr>
-                    <h3 class="sub-header">Comentarios</h3>
+                    <h3 class="sub-header">{{ trans('course::lesson/show.messages.comments') }}</h3>
                     <!-- Comments -->
                     <ul class="media-list push">
                         <li class="media">
@@ -78,11 +74,11 @@
                            </li>
                            @endforeach
                             <div class="media-body">
-                                <form action="{{ route('new_comment_class') }}" method="post">
-                                    {{ Form::hidden('user_id', $user->id) }}
-                                    {{ Form::hidden('class_id', $lesson->id) }}
-                                    <textarea id="comment" name="comment" class="form-control" rows="2" placeholder="Tu comentario"></textarea>
-                                    <button type="submit" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Comentar</button>
+                                <form action="#" method="post">
+                                    {!! Form::hidden('user_id', Auth::user()->id) !!}
+                                    {!! Form::hidden('lesson_id', $lesson->id)  !!}
+                                    <textarea id="comment" name="comment" class="form-control" rows="2" placeholder="{{ trans('course::lesson/show.textbox.comment') }}"></textarea>
+                                    <button type="submit" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> {{ trans('course::lesson/show.btn.comment') }}</button>
                                 </form>
                             </div>
                         </li>
@@ -98,7 +94,7 @@
         <div class="block">
             <!-- About Content -->
             <div class="block-section">
-                <a target="_blank" href="{{ $lesson->download }}" class="btn btn-lg btn-default btn-block"><i class="fa fa-download"></i> Descargar archivos</a>
+                <a target="_blank" href="{{ $lesson->download }}" class="btn btn-lg btn-default btn-block"><i class="fa fa-download"></i> {{ trans('course::lesson/show.btn.download') }}</a>
             </div>
             <!-- END About Content -->
         </div>

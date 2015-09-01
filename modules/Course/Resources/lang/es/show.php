@@ -12,7 +12,7 @@ return [
             'module'        => 'Modulos',
             'favorite'      => 'Favorito',
             'video'         => 'Es video',
-            'note'          => 'Es nota'
-
+            'note'          => 'Es nota',
+            'view'          => 'Ya la viste'
         ],
 ];

@@ -69,7 +69,7 @@
                                 <td><a href="{{ route('learning.lesson.show', $lesson->id) }}"><i class="fa fa-ellipsis-h"></i>  {{ $lesson->title }}</a></td>
                                 <td class="text-right">
                                     @if($lesson->view == true)
-                                    <a class="btn btn-xs btn-info"  data-toggle="tooltip" title="Ya la viste" href="#"><i class="fa fa-check"></i></a>
+                                    <a class="btn btn-xs btn-info"  data-toggle="tooltip" title="{{ trans('course::show.btn.view') }}" href="#"><i class="fa fa-check"></i></a>
                                     @endif
                                     <a class="btn btn-xs btn-success" href="{{ route('learning.lesson.show', $lesson->id) }}">
                                         @if($lesson->type == 1)
