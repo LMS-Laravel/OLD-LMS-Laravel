@@ -1,10 +1,10 @@
-<?php namespace Modules\Auth\Http\Controllers;
+<?php namespace Modules\User\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Pingpong\Modules\Routing\Controller;
-use Modules\Auth\Entities\Permission;
-use Modules\Auth\Http\Requests\PermissionRequest;
+use Modules\User\Entities\Permission;
+use Modules\User\Http\Requests\PermissionRequest;
 
 
 class PermissionController extends Controller {

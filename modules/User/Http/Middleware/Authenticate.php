@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Auth\Http\Middleware;
+namespace Modules\User\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
-class RedirectIfAuthenticated
+class Authenticate
 {
     /**
      * The Guard implementation.
@@ -34,8 +34,12 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next)
     {
-        if ($this->auth->check()) {
-            return redirect(route('dashboard.learning'));
+        if ($this->auth->guest()) {
+            if ($request->ajax()) {
+                return response('Unauthorized.', 401);
+            } else {
+                return redirect()->guest('/');
+            }
         }
 
         return $next($request);

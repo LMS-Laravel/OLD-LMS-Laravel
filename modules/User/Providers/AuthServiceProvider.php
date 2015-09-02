@@ -1,4 +1,4 @@
-<?php namespace Modules\Auth\Providers;
+<?php namespace Modules\User\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

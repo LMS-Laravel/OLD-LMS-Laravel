@@ -1,12 +1,12 @@
-<?php namespace Modules\Auth\Http\Controllers;
+<?php namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-use Modules\Auth\Entities\User;
-use Modules\Auth\Http\Requests\UserRequest;
+use Modules\User\Entities\User;
+use Modules\User\Http\Requests\UserRequest;
 use Pingpong\Modules\Routing\Controller;
-use Modules\Auth\Entities\Role;
+use Modules\User\Entities\Role;
 
 class UserController extends Controller {
 

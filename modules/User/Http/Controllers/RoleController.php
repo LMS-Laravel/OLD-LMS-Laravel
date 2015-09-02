@@ -1,11 +1,11 @@
-<?php namespace Modules\Auth\Http\Controllers;
+<?php namespace Modules\User\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Pingpong\Modules\Routing\Controller;
-use Modules\Auth\Entities\Permission;
-use Modules\Auth\Entities\Role;
-use Modules\Auth\Http\Requests\RoleRequest;
+use Modules\User\Entities\Permission;
+use Modules\User\Entities\Role;
+use Modules\User\Http\Requests\RoleRequest;
 
 class RoleController extends Controller {
 

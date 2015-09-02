@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['prefix' => 'auth', 'namespace' => 'Modules\Auth\Http\Controllers'], function()
+Route::group(['prefix' => 'auth', 'namespace' => 'Modules\User\Http\Controllers'], function()
 {
 	Route::get('/login', ['as' => 'auth.loginGet', 'uses' => 'AuthController@index']);
     Route::post('/login', ['as' => 'auth.login', 'uses' => 'AuthController@postLogin']);

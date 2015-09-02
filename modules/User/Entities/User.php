@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Auth\Entities;
+namespace Modules\User\Entities;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -26,7 +26,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public function roles() {
 
-        return $this->belongsToMany('Modules\Auth\Entities\Role', 'role_user');
+        return $this->belongsToMany('Modules\User\Entities\Role', 'role_user');
     }
 
     public function country(){

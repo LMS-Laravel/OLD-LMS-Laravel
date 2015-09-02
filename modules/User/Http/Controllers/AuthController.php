@@ -1,4 +1,4 @@
-<?php namespace Modules\Auth\Http\Controllers;
+<?php namespace Modules\User\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -70,7 +70,7 @@ class AuthController extends Controller {
 
     private function getFailedLoginMessage() {
 
-        return trans('auth::ui.login.credentials_error', array('field' => Config::get('auth.login')));
+        return trans('user::ui.login.credentials_error', array('field' => Config::get('auth.login')));
     }
 
 }

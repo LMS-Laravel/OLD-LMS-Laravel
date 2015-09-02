@@ -57,11 +57,11 @@
                         <li class="media">
                            @foreach($lesson->comments as $comment)
                            <li class="media">
-                               <a href="{{ route('profile', $comment->user->id) }}" class="pull-left">
+                               <a href="#" class="pull-left">
                                    <img src="{{ Gravatar::src($comment->user->email) }}" alt="Avatar" class="img-circle">
                                </a>
                                <div class="media-body">
-                                   <a href="{{ route('profile', $comment->user->id) }}"><strong>{{ $comment->user->full_name }}</strong></a>
+                                   <a href="#"><strong>{{ $comment->user->full_name }}</strong></a>
                                    <span class="text-muted"><small><em>{{ $comment->difference_hour }}</em></small></span>
                                    <p>{{ $comment->comment }}</p>
                                </div>

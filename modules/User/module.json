@@ -1,12 +1,12 @@
 {
-    "name": "Auth",
-    "alias": "auth",
+    "name": "User",
+    "alias": "user",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Auth\\Providers\\AuthServiceProvider"
+        "Modules\\User\\Providers\\AuthServiceProvider"
     ],
     "aliases":{},
     "files": [

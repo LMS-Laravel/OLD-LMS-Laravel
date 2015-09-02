@@ -1,7 +1,7 @@
 <?php namespace Modules\Course\Entities;
    
 use Illuminate\Database\Eloquent\Model;
-use Modules\Auth\Entities\User;
+use Modules\User\Entities\User;
 
 class Course extends Model {
 

@@ -1,4 +1,4 @@
-<?php namespace Modules\Auth\Entities;
+<?php namespace Modules\User\Entities;
    
 use Zizaco\Entrust\EntrustRole;
 
@@ -10,12 +10,12 @@ class Role extends EntrustRole {
 
     public function permissions() {
 
-    	return $this->belongsToMany('Modules\Auth\Entities\Permission', 'permission_role');
+    	return $this->belongsToMany('Modules\User\Entities\Permission', 'permission_role');
     }
 
     public function users() {
 
-        return $this->belongsToMany('Modules\Auth\Entities\User', 'role_user');
+        return $this->belongsToMany('Modules\User\Entities\User', 'role_user');
     }
 
 }

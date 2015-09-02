@@ -44,7 +44,7 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                    <a href="#"><i class="fa fa-ban fa-fw pull-right"></i> Salir</a>
+                    <a href="{{ route('auth.logout') }}"><i class="fa fa-ban fa-fw pull-right"></i> Salir</a>
                 </li>
             </ul>
         </li>

@@ -18,7 +18,10 @@ class CommentController extends Controller {
 
     public function store(CommentRequest $request)
 	{
-        $data = $this->comment->create($request->all());
+        $lesson = $request->only(['lesson_id']);
+        $this->comment->create($request->all());
+
+        return redirect(route('learning.lesson.show', $lesson));
 	}
 	
 }

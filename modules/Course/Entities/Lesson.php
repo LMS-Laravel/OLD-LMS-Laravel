@@ -1,7 +1,7 @@
 <?php namespace Modules\Course\Entities;
    
 use Illuminate\Database\Eloquent\Model;
-use Modules\Auth\Entities\User;
+use Modules\User\Entities\User;
 
 class Lesson extends Model {
 
@@ -24,7 +24,7 @@ class Lesson extends Model {
 
     public function comments()
     {
-        return $this->hasMany(Comments::class);
+        return $this->hasMany(Comment::class);
     }
 
     public function getViewAttribute()

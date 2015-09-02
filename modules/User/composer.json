@@ -1,10 +1,10 @@
 {
-	"name": "pingpong-modules/auth",
+	"name": "lms-laravel/user",
 	"description": "",
 	"authors": [
 		{
-			"name": "Pingpong Labs",
-			"email": "pingpong.labs@gmail.com"
+			"name": "Angel Kurten",
+			"email": "angelkurten@gmail.com"
 		}
 	],
 	"autoload": {
