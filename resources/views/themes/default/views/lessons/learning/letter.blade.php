@@ -68,12 +68,12 @@
                            </li>
                            @endforeach
                             <div class="media-body">
-                                <form action="#" method="post">
+                                {!! Form::open(['route'=>'learning.comment.store', 'method'=>'POST' ]) !!}
                                     {!! Form::hidden('user_id', Auth::user()->id) !!}
                                     {!! Form::hidden('lesson_id', $lesson->id)  !!}
                                     <textarea id="comment" name="comment" class="form-control" rows="2" placeholder="{{ trans('course::lesson/show.textbox.comment') }}"></textarea>
                                     <button type="submit" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> {{ trans('course::lesson/show.btn.comment') }}</button>
-                                </form>
+                                {!! Form::close() !!}
                             </div>
                         </li>
                     </ul>

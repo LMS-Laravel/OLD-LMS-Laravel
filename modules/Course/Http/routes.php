@@ -5,11 +5,21 @@ Route::group(['prefix' => 'learning', 'namespace' => 'Modules\Course\Http\Contro
     Route::get('/', ['as'=>'dashboard.learning', 'uses'=>'CourseController@index']);
 
     Route::resource('course', 'CourseController',
-        ['except' => ['create', 'store', 'update', 'destroy']]
+        [
+            'except' => ['create', 'store', 'update', 'destroy']
+        ]
     );
 
     Route::resource('lesson', 'LessonController',
-        ['except' => ['index','create', 'store', 'update', 'destroy']]
+        [
+            'except' => ['index','create', 'store', 'update', 'destroy']
+        ]
+    );
+
+    Route::resource('comment', 'CommentController',
+        [
+            'except' => ['index','create', 'update']
+        ]
     );
 });
 

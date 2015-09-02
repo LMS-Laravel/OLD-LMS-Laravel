@@ -221,7 +221,7 @@ return [
         'Theme'     => Pingpong\Themes\ThemeFacade::class,
         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
         'Gravatar'  => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
-        'Share'     => Chencha\Share\ShareFacade::class
+        'Share'     => Chencha\Share\ShareFacade::class,
     ],
 
 ];

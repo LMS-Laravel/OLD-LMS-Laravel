@@ -17,7 +17,8 @@
         "pingpong/themes": "^2.1",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "thomaswelton/laravel-gravatar": "~1.0",
-        "chencha/share": "^5.0"
+        "chencha/share": "^5.0",
+        "barryvdh/laravel-ide-helper": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -44,6 +45,7 @@
             "php artisan clear-compiled"
         ],
         "post-update-cmd": [
+            "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
         "post-root-package-install": [
