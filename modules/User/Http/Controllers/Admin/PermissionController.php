@@ -1,4 +1,4 @@
-<?php namespace Modules\User\Http\Controllers;
+<?php namespace Modules\User\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;

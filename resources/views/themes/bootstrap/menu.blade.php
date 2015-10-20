@@ -4,7 +4,7 @@
     @if (empty($item['submenu']))
         <a href="{{ $item['url'] }}" @if (isset($item['target'])) target = {{ $item['target'] }}  @endif @if (isset($item['data-scroll'])) data-scroll @endif >
             @if(isset($item['icon']))
-                <i class="fa fa-{{ $item['title'] }}"></i>
+                <i class="{{ $item['icon'] }}"></i>  @if(isset($item['with-icon'])) {{ $item['title'] }} @endif
             @else
                 {{ $item['title'] }}
             @endif

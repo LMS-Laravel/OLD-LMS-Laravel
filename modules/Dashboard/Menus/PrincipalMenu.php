@@ -49,19 +49,16 @@ class PrincipalMenu extends BaseMenu
                 'data-scroll' => true
             ],
             'facebook'  => [
-                'title' => 'facebook',
                 'url'   => '#',
-                'icon'  => true,
+                'icon'  => 'fa fa-facebook',
             ],
             'twitter'  => [
-                'title' => 'twitter',
                 'url'   => '#',
-                'icon'  => true,
+                'icon'  => 'fa fa-twitter',
             ],
             'google'  => [
-                'title' => 'google',
                 'url'   => '#',
-                'icon'  => true,
+                'icon'  => 'fa fa-google',
             ],
         ];
     }

@@ -21,4 +21,9 @@ class DashboardController extends Controller {
 		$principal = new PrincipalMenu();
 		return \Theme::view('dashboard.frontend', compact('principal'));
 	}
+
+	public function backend()
+	{
+		return \Theme::view('dashboard.backend', compact('principal'));
+	}
 }

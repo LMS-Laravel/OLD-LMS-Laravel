@@ -1,4 +1,4 @@
-<?php namespace Modules\User\Http\Controllers;
+<?php namespace Modules\User\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +21,7 @@ class UserController extends Controller {
 
             $users = User::with('roles')->get();
 
-            return view('auth::user.index', compact('users'));
+            return \Theme::view('admin.user.index', compact('users'));
         }
 
         return redirect('auth/logout');
@@ -33,7 +33,7 @@ class UserController extends Controller {
 
             $roles = Role::orderBy('display_name', 'asc')->lists('display_name', 'id');
 
-            return view('auth::user.create', compact('roles'));
+            return \Theme::view('admin.user.create', compact('roles'));
         }
 
         return redirect('auth/logout');
@@ -73,7 +73,7 @@ class UserController extends Controller {
 
             $roles = Role::orderBy('display_name', 'asc')->lists('display_name', 'id');
 
-            return view('auth::user.edit', compact('user', 'roles', 'roles_user'));
+            return \Theme::view('admin.user.edit', compact('user', 'roles', 'roles_user'));
         }
 
         return redirect('auth/logout');
@@ -128,7 +128,7 @@ class UserController extends Controller {
 
     public function show() {
 
-        return view('auth::user.form_change_password');
+        return \Theme::view('admin.user.form_change_password');
 
     }
 
