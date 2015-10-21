@@ -67,7 +67,11 @@ return [
         'email'                 =>  'Correo',
         'username'              =>  'Usuario',
         'password'              =>  'Contraseña',
-        'credentials_error'     =>  'El :field o la contraseña no son correctos'
+        'credentials_error'     =>  'El :field o la contraseña no son correctos',
+        'btn-login'             =>  'Ingresar a la plataforma',
+        'btn-remember'          =>  'Quieres que me acurde de ti?',
+        'btn-lost-password'     =>  'Olvidaste la contraseña?',
+        'btn-new-account'       =>  'Crear nueva cuenta',
     ],
 
 ];

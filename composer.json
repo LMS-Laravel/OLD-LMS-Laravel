@@ -18,7 +18,8 @@
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "thomaswelton/laravel-gravatar": "~1.0",
         "chencha/share": "^5.0",
-        "barryvdh/laravel-ide-helper": "^2.1"
+        "barryvdh/laravel-ide-helper": "^2.1",
+        "guzzlehttp/guzzle": "~4.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

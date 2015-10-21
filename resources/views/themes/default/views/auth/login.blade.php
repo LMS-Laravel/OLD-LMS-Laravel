@@ -36,19 +36,19 @@
         </div>
         <div class="form-group form-actions">
             <div class="col-xs-4">
-                <label class="switch switch-primary" data-toggle="tooltip" title="Quieres que me acuerde de ti?">
+                <label class="switch switch-primary" data-toggle="tooltip" title="{{ trans('user::ui.login.btn-remember') }}">
                     <input type="checkbox" id="remember" name="remember" checked>
                     <span></span>
                 </label>
             </div>
             <div class="col-xs-8 text-right">
-                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> Ingresar a la plataforma</button>
+                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> {{ trans('user::ui.login.btn-login') }}</button>
             </div>
         </div>
         <div class="form-group">
             <div class="col-xs-12 text-center">
-                <a href="" id="link-reminder-login"><small>Olvidaste la contraseña?</small></a> -
-                <a href="" id="link-register-login"><small>Crear nueva cuenta</small></a>
+                <a href="" id="link-reminder-login"><small>{{ trans('user::ui.login.btn-lost-password') }}</small></a> -
+                <a href="" id="link-register-login"><small>{{ trans('user::ui.login.btn-new-account') }}</small></a>
             </div>
         </div>
         {!! Form::close() !!}

@@ -6,7 +6,7 @@ Route::group(['prefix' => 'auth', 'namespace' => 'Modules\User\Http\Controllers'
     Route::post('/login', ['as' => 'auth.login', 'uses' => 'AuthController@postLogin']);
     Route::get('/logout', ['as' => 'auth.logout', 'uses' => 'AuthController@getLogout']);
 
-    Route::post('/user/change-password', ['as' => 'user.change-password', 'uses' => 'UserController@changePassword']);
+    Route::post('/user/change-password', ['as' => 'user.change-password', 'uses' => 'Admin\UserController@changePassword']);
 });
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Modules\User\Http\Controllers\Admin'], function(){
@@ -17,8 +17,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Modules\User\Http\Controllers
 
 });
 
-Route::group(['prefix' => 'learning', 'namespace' => 'Modules\User\Http\Controllers\Learning'], function(){
+/*Route::group(['prefix' => 'learning', 'namespace' => 'Modules\User\Http\Controllers\Learning'], function(){
 
     Route::resource('user', 'UserController');
 
-});
+});*/
