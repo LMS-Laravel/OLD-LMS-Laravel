@@ -20,7 +20,9 @@
         "chencha/share": "^5.0",
         "barryvdh/laravel-ide-helper": "^2.1",
         "guzzlehttp/guzzle": "~4.0",
-        "lms-laravel/user": "dev-master"
+        "lms-laravel/user": "dev-master",
+        "lms-laravel/dashboard": "dev-master",
+        "lms-laravel/course": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
