@@ -59,5 +59,10 @@
     },
     "config": {
         "preferred-install": "dev"
+    },
+    "extra": {
+        "installer-paths": {
+            "modules/{$name}": ["type:lms-module"]
+        }
     }
 }
