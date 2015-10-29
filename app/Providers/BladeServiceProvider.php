@@ -17,6 +17,10 @@ class BladeServiceProvider extends ServiceProvider
         Blade::directive('route', function($expression) {
             return "<?php echo route($expression) ?>";
         });
+
+        Blade::directive('trans', function($expression) {
+            return "<?php echo trans($expression) ?>";
+        });
     }
 
     /**

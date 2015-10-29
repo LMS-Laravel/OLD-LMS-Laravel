@@ -8,7 +8,7 @@
         <h1>
             <i class="gi gi-keys"></i> <strong>{{ $data['name'] }}</strong>
             <br>
-            <small>Por favor <strong>Ingresa</strong> o <strong>Registrate</strong></small>
+            @trans('user::ui.common.message-auth')
         </h1>
         @include('themes/default/views/errors/form_error')
     </div>
@@ -42,13 +42,13 @@
                 </label>
             </div>
             <div class="col-xs-8 text-right">
-                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> {{ trans('user::ui.login.btn-login') }}</button>
+                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> {{ trans('user::ui.common.btn-login') }}</button>
             </div>
         </div>
         <div class="form-group">
             <div class="col-xs-12 text-center">
-                <a href="" id="link-reminder-login"><small>{{ trans('user::ui.login.btn-lost-password') }}</small></a> -
-                <a href="" id="link-register-login"><small>{{ trans('user::ui.login.btn-new-account') }}</small></a>
+                <a href="@route('auth.reset.password.getReset')" id="link-reminder-login"><small>{{ trans('user::ui.common.btn-lost-password') }}</small></a> -
+                <a href="@route('auth.get.register')" id="link-register-login"><small>{{ trans('user::ui.login.btn-new-account') }}</small></a>
             </div>
         </div>
         {!! Form::close() !!}

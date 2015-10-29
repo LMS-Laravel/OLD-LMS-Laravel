@@ -24,7 +24,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('app:install')
-                 ->hourly();
+        //Command for running queues
+        $schedule->command('queue:work')
+            ->everyMinute()
+            ->sendOutputTo(storage_path() . '/logs/queue-jobs.log');
     }
 }
