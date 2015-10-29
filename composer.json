@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "webpatser/laravel-countries": "1.4.*",
+        "angelkurten/countries": "1.0.*",
         "laravelcollective/html": "~5.1",
         "pingpong/modules": "~2.1",
         "zizaco/entrust": "dev-laravel-5",

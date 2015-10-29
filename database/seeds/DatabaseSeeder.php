@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,7 +14,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         // $this->call(UserTableSeeder::class);
-        $this->call('CountriesSeeder');
+        $this->call(CountriesSeeder::class);
         $this->command->info('Seeded Countries');
 
         Model::reguard();

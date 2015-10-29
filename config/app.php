@@ -145,6 +145,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
         App\Providers\LocalEnvironmentServiceProvider::class,
+        App\Providers\BladeServiceProvider::class,
 
 
         /*
@@ -154,14 +155,13 @@ return [
         Pingpong\Modules\ModulesServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
-        Webpatser\Countries\CountriesServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Styde\Html\HtmlServiceProvider::class,
         Pingpong\Themes\ThemesServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
         Chencha\Share\ShareServiceProvider::class,
-
+        AngelKurten\Countries\LaravelCountriesServicesProvider::class
     ],
 
     /*

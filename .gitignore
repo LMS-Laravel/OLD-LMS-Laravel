@@ -4,3 +4,5 @@
 .idea
 composer.lock
 _ide_helper.php
+/package
+/libraries
