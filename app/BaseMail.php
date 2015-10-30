@@ -22,13 +22,14 @@ abstract class BaseMail
 
     public function send($person, $view, $data, $subject)
     {
-        $theme = \Theme::getCurrent();
-        $view = 'themes' . \Theme::getThemePath($theme) . ".views." . $view;
+        $view = view_path($view);
 
         \Mail::send($view, $data, function($message) use($person, $subject)
         {
             $message->to($person->email)
                 ->subject($subject);
+
+            $message->from(env('MAILGUN_NAME'), 'MAILGUN_EMAIL');
         });
     }
 
@@ -38,6 +39,8 @@ abstract class BaseMail
         {
             $message->to($person->email)
                 ->subject($subject);
+
+            $message->from(env('MAILGUN_NAME'), 'MAILGUN_EMAIL');
         });
     }
 }

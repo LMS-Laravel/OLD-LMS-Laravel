@@ -38,7 +38,10 @@
         "psr-4": {
             "App\\": "app/",
             "Modules\\": "modules/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "scripts": {
         "post-install-cmd": [
