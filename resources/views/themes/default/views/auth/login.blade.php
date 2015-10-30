@@ -30,7 +30,7 @@
             <div class="col-xs-12">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
-                    <input type="password" id="password" name="password" class="form-control input-lg" placeholder="{{ trans('user::ui.login.password') }}" required>
+                    <input type="password" id="password" name="password" class="form-control input-lg" placeholder="{{ trans('user::ui.common.password') }}" required>
                 </div>
             </div>
         </div>

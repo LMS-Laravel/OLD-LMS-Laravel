@@ -1,7 +1,7 @@
 @extends('themes/default/views/layouts/base_auth')
 
 @section('content')
-<!-- Register Container -->
+        <!-- Register Container -->
 <div id="login-container" class="animation-fadeIn">
     <!-- Register Title -->
     <div class="login-title text-center">
@@ -25,38 +25,8 @@
     <!-- Register Block -->
     <div class="block push-bit">
         <!-- Register Form -->
-        {!! Form::open(['route' => 'auth.post.register', 'id'=>'form-register', 'method' => 'POST', 'class' => 'form-horizontal form-bordered form-control-borderless']) !!}
-        <div class="form-group">
-            <div class="col-xs-6">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="gi gi-user"></i></span>
-                    <input type="text" id="first_name" name="first_name" class="form-control input-lg" required placeholder="@trans('user::ui.register.first_name')">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <input type="text" id="las_name" name="last_name" class="form-control input-lg" required placeholder="@trans('user::ui.register.last_name')">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-12">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="gi gi-user"></i></span>
-                    <input type="text" id="username" name="username" required class="form-control input-lg" placeholder="@trans('user::ui.register.username')">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-12">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="gi gi-globe"></i></span>
-                    <select id="country_id" name="country_id" class="select-chosen form-control input-lg" data-placeholder="@trans('user::ui.register.country')" style="width: 250px;">
-                        @foreach($countries as $country)
-                            <option value="{{ $country->id }}">{{$country->short_name}}</option>
-                        @endforeach
-                    </select>
-                </div>
-            </div>
-        </div>
+        {!! Form::open(['route' => 'auth.reset.password.postReset', 'id'=>'form-register', 'method' => 'POST', 'class' => 'form-horizontal form-bordered form-control-borderless']) !!}
+        <input type="hidden" name="token" value="{{ $token }}">
         <div class="form-group">
             <div class="col-xs-12">
                 <div class="input-group">
@@ -83,7 +53,7 @@
         </div>
         <div class="form-group form-actions">
             <div class="col-xs-12 text-right">
-                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> @trans('user::ui.register.btn-create')</button>
+                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> @trans('user::ui.reset.btn-change')</button>
             </div>
         </div>
         <div class="form-group">
