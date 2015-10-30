@@ -1,5 +1,8 @@
 # LMS-Laravel
-[![Latest Stable Version](https://poser.pugx.org/lms-laravel/lms-laravel/v/stable)](https://packagist.org/packages/lms-laravel/lms-laravel) [![Total Downloads](https://poser.pugx.org/lms-laravel/lms-laravel/downloads)](https://packagist.org/packages/lms-laravel/lms-laravel) [![Latest Unstable Version](https://poser.pugx.org/lms-laravel/lms-laravel/v/unstable)](https://packagist.org/packages/lms-laravel/lms-laravel) [![License](https://poser.pugx.org/lms-laravel/lms-laravel/license)](https://packagist.org/packages/lms-laravel/lms-laravel)[![PHPPackages Rank](http://phppackages.org/p/lms-laravel/lms-laravel/badge/rank.svg)](http://phppackages.org/p/lms-laravel/lms-laravel)
+[![Latest Stable Version](https://poser.pugx.org/lms-laravel/lms-laravel/v/stable)](https://packagist.org/packages/lms-laravel/lms-laravel)
+[![Total Downloads](https://poser.pugx.org/lms-laravel/lms-laravel/downloads)](https://packagist.org/packages/lms-laravel/lms-laravel) 
+[![Latest Unstable Version](https://poser.pugx.org/lms-laravel/lms-laravel/v/unstable)](https://packagist.org/packages/lms-laravel/lms-laravel) 
+[![License](https://poser.pugx.org/lms-laravel/lms-laravel/license)](https://packagist.org/packages/lms-laravel/lms-laravel) 
 
 LMS-laravel is a management system of educational content, want to facilitate the creation of a platform simple and intuitive
 
