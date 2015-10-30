@@ -38,25 +38,36 @@
     </tr>
     <tr>
         <td align="center" bgcolor="#9b59b6" style="padding: 20px 20px 20px 20px; color: #ffffff; font-family: Arial, sans-serif; font-size: 36px; font-weight: bold;">
-            {{trans('user::mail.register.welcome', ['name'=> $data['name']]) }}
+            {{ $data['name'] }}
         </td>
     </tr>
     <tr>
         <td align="center" bgcolor="#ffffff" style="padding: 40px 20px 40px 20px; color: #555555; font-family: Arial, sans-serif; font-size: 20px; line-height: 30px; border-bottom: 1px solid #f6f6f6;">
-            <b>{{ trans('user::mail.register.message', ['name'=> $data['name']]) }}</b><br/>
+            <b>@trans('user::mail.reset.message')</b>
         </td>
     </tr>
     <tr>
-        <td align="center" bgcolor="#f9f9f9" style="padding: 30px 20px 30px 20px; font-family: Arial, sans-serif;">
+        <td align="center" bgcolor="#f9f9f9" style="padding: 20px 20px 0 20px; color: #555555; font-family: Arial, sans-serif; font-size: 20px; line-height: 30px;">
+            <b>@trans('user::mail.reset.username'):</b> {{ $user->username }}<br>
+            <b>@trans('user::mail.reset.email'):</b> {{ $user->email }} <br>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#f9f9f9" style="padding: 30px 20px 30px 20px; font-family: Arial, sans-serif; border-bottom: 1px solid #f6f6f6;">
             <table bgcolor="#9b59b6" border="0" cellspacing="0" cellpadding="0" class="buttonwrapper">
                 <tr>
                     <td align="center" height="50" style=" padding: 0 25px 0 25px; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold;" class="button">
-                        <a href="#" style="color: #ffffff; text-align: center; text-decoration: none;">@trans('user::mail.register.btn-started')</a>
+                        <a href="@route('auth.reset.password.getReset')/{{ $token }} " style="color: #ffffff; text-align: center; text-decoration: none;">@trans('user::mail.reset.btn-reset')</a>
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
+    <!--<tr>
+        <td align="center" bgcolor="#ffffff" style="padding: 10px 20px 10px 20px; color: #555555; font-family: Arial, sans-serif; font-size: 15px; line-height: 24px;">
+            Help! <a href="#" style="color: #9b59b6;">I didn't request this!</a>
+        </td>
+    </tr>-->
     <tr>
         <td align="center" bgcolor="#dddddd" style="padding: 15px 10px 15px 10px; color: #555555; font-family: Arial, sans-serif; font-size: 12px; line-height: 18px;">
             <b>{{ $data['name'] }}</b>

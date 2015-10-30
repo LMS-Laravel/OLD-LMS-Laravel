@@ -22,7 +22,7 @@
             <div class="col-xs-12">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="gi gi-user"></i></span>
-                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="{{ trans('user::ui.login.username') }}" required>
+                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="{{ trans('user::ui.common.username') }}" required>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
         </div>
         <div class="form-group">
             <div class="col-xs-12 text-center">
-                <a href="@route('auth.reset.password.getReset')" id="link-reminder-login"><small>{{ trans('user::ui.common.btn-lost-password') }}</small></a> -
+                <a href="@route('auth.reset.password.getEmail')" id="link-reminder-login"><small>{{ trans('user::ui.common.btn-lost-password') }}</small></a> -
                 <a href="@route('auth.get.register')" id="link-register-login"><small>{{ trans('user::ui.login.btn-new-account') }}</small></a>
             </div>
         </div>

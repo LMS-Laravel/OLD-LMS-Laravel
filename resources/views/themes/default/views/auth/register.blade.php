@@ -61,7 +61,7 @@
             <div class="col-xs-12">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
-                    <input type="email" id="email" name="email" required class="form-control input-lg" placeholder="@trans('user::ui.register.email')">
+                    <input type="email" id="email" name="email" required class="form-control input-lg" placeholder="@trans('user::ui.common.email')">
                 </div>
             </div>
         </div>
