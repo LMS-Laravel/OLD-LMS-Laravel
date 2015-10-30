@@ -2,7 +2,7 @@
 
 function theme_path($theme = 'default')
 {
-    return $theme;
+    return "themes.$theme";
 }
 
 function view_path($view)

@@ -4,7 +4,7 @@ return array(
 
     'default' => 'default',
 
-    'path' => base_path('themes'),
+    'path' => base_path('resources/views/themes'),
 
     'cache' => [
         'enabled' => false,
