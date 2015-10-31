@@ -22,7 +22,8 @@
         "guzzlehttp/guzzle": "~4.0",
         "lms-laravel/user": "dev-master",
         "lms-laravel/dashboard": "dev-master",
-        "lms-laravel/course": "dev-master"
+        "lms-laravel/course": "dev-master",
+        "lms-laravel/default-theme": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

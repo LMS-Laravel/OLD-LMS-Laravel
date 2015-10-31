@@ -48,11 +48,13 @@ class InstallApp extends Command
         $this->info('Executing Migrations Modules');
         $this->call('module:migrate');
         $this->info('Executing Seeders Modules');
-
         foreach($modules as $module)
         {
             $this->info("Executing Seed for module $module->name");
             $this->call('module:seed', ['module' => $module->name]);
         }
+
+        $this->info('Activate theme: Default');
+        \Theme::set('default');
     }
 }
