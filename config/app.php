@@ -161,7 +161,8 @@ return [
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
         Chencha\Share\ShareServiceProvider::class,
-        AngelKurten\Countries\LaravelCountriesServicesProvider::class
+        AngelKurten\Countries\LaravelCountriesServicesProvider::class,
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
     ],
 
     /*
@@ -214,7 +215,6 @@ return [
         'Module'    => Pingpong\Modules\Facades\Module::class,
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
         'PDF'       => Barryvdh\DomPDF\Facade::class,
-        'Countries' => Webpatser\Countries\CountriesFacade::class,
         'Alert'     => Styde\Html\Facades\Alert::class,
         'Field'     => Styde\Html\Facades\Field::class,
         'Menu'      => Styde\Html\Facades\Menu::class,

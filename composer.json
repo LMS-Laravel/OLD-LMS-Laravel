@@ -23,7 +23,8 @@
         "lms-laravel/user": "dev-master",
         "lms-laravel/dashboard": "dev-master",
         "lms-laravel/course": "dev-master",
-        "lms-laravel/default-theme": "dev-master"
+        "lms-laravel/default-theme": "dev-master",
+        "cviebrock/eloquent-sluggable": "^3.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
