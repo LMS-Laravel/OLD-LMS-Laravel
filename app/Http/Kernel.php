@@ -29,6 +29,5 @@ class Kernel extends HttpKernel
     protected $routeMiddleware = [
         'auth'      => \Modules\User\Http\Middleware\Authenticate::class,
         'guest'     => \Modules\User\Http\Middleware\RedirectIfAuthenticated::class,
-        'learning'  => \Modules\User\Http\Middleware\Authenticate::class,
     ];
 }

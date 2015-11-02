@@ -6,7 +6,12 @@ return [
      * Set the HTML theme for the components
      * like alerts, form fields, menus, etc.
      */
-    'theme' => 'bootstrap',
+    'theme'  => 'bootstrap',
+
+    /*
+     * Set the folder to store the custom templates
+     */
+    'custom' => view_path('layouts/styde'),
 
     /*
      * Set to false to deactivate the AccessHandler component
