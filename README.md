@@ -8,6 +8,19 @@ LMS-laravel is a management system of educational content, want to facilitate th
 
 LMS-laravel is based as its name indicates in the framework laravel 5, and uses various packages created by other developers.
 
+
+Download and Install LMS-Laravel
+-------------
+Step 1: composer create-project lms-laravel/lms-laravel=dev-master {foldername}
+
+Stap 2: php artisan app:install
+
+Credentials demo
+-------------
+
+User: admin
+Pass: admin123
+
 Used By
 -------------
 
