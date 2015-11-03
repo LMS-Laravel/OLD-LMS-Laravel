@@ -18,7 +18,8 @@ Stap 2: php artisan app:install
 Credentials demo
 -------------
 
-User: admin
+User: admin 
+
 Pass: admin123
 
 Used By
