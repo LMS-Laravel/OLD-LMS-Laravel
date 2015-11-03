@@ -222,6 +222,7 @@ return [
         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
         'Gravatar'  => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
         'Share'     => Chencha\Share\ShareFacade::class,
+        'Gate' => Illuminate\Support\Facades\Gate::class,
     ],
 
 ];

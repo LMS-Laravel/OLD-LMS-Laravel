@@ -10,7 +10,7 @@
         "angelkurten/countries": "1.0.*",
         "laravelcollective/html": "~5.1",
         "pingpong/modules": "~2.1",
-        "zizaco/entrust": "dev-laravel-5",
+        "zizaco/entrust": "dev-master",
         "barryvdh/laravel-dompdf": "0.6.*",
         "prettus/l5-repository": "^2.1",
         "styde/html": "~1.0",

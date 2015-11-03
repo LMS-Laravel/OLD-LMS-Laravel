@@ -15,8 +15,8 @@ class BladeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::directive('route', function($name, $parameters = [], $absolute = true, $route = null) {
-            return "<?php echo route($name, $parameters = [], $absolute = true, $route = null) ?>";
+        Blade::directive('route', function($name) {
+            return "<?php echo route($name) ?>";
         });
 
         Blade::directive('trans', function($expression) {
