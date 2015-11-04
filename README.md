@@ -13,7 +13,7 @@ Download and Install LMS-Laravel
 -------------
 Step 1: composer create-project lms-laravel/lms-laravel=dev-master {foldername}
 
-Stap 2: php artisan app:install
+Step 2: cd {foldername}; php artisan app:install
 
 Credentials demo
 -------------
