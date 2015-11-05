@@ -28,8 +28,6 @@ abstract class BaseMail
         {
             $message->to($person->email)
                 ->subject($subject);
-
-            $message->from(env('MAILGUN_NAME'), env('MAILGUN_EMAIL'));
         });
     }
 
@@ -39,8 +37,6 @@ abstract class BaseMail
         {
             $message->to($person->email)
                 ->subject($subject);
-
-            $message->from(env('MAILGUN_NAME'), 'MAILGUN_EMAIL');
         });
     }
 }
