@@ -15,6 +15,10 @@ Step 1: composer create-project lms-laravel/lms-laravel=dev-master {foldername}
 
 Step 2: cd {foldername}; php artisan app:install
 
+Step 3: Configurate database in .env
+
+Step 4: Confugurate credentials mailgun in .env
+
 Credentials demo
 -------------
 
