@@ -8,6 +8,9 @@ LMS-laravel is a management system of educational content, want to facilitate th
 
 LMS-laravel is based as its name indicates in the framework laravel 5, and uses various packages created by other developers.
 
+Notice
+-------------
+This application is still in development, if you want to collaborate with the development you can write to angelkurten@hotmail.com
 
 Download and Install LMS-Laravel
 -------------
