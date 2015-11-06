@@ -32,12 +32,3 @@ Used By
 + [PHPacademy](http://phpacademy.co)
 + [BootcampwithUS](http://bootcampwith.us)
 
-
-Created By
------------
-
-+ [Angel Kurten](http://twitter.com/AngelKurten)
-
-Collaborator
----------
-+ [Carlos Rojas](http://twitter.com/carlosrojas_o)
