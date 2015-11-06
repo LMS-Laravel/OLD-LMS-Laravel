@@ -56,5 +56,7 @@ class InstallApp extends Command
 
         $this->info('Activate theme: Default');
         \Theme::set('default');
+        $this->info('Publish assets themes');
+        $this->call('theme:publish');
     }
 }
