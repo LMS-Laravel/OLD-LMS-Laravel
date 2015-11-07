@@ -20,7 +20,7 @@ Step 2: cd {foldername}; php artisan app:install
 
 Step 3: Configurate database in .env
 
-Step 4: Confugurate credentials mailgun in .env
+Step 4: Configurate credentials mailgun in .env
 
 Credentials demo
 -------------
