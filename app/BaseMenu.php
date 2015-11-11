@@ -1,10 +1,11 @@
-<?php namespace App;
+<?php
+
+namespace app;
 
 use Styde\Html\Facades\Menu;
 
 abstract class BaseMenu
 {
-
     protected $class = null;
 
     /**
@@ -16,11 +17,11 @@ abstract class BaseMenu
     }
 
     /**
-     * Specify Items Menu
+     * Specify Items Menu.
+     *
      * @return string
      */
-    abstract function items();
-
+    abstract public function items();
 
     /**
      * @return mixed

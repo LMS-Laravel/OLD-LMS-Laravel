@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace app;
 
-Use Illuminate\Mail\Mailer as Mail;
+use Illuminate\Mail\Mailer as Mail;
 
 abstract class BaseMail
 {
@@ -13,6 +13,7 @@ abstract class BaseMail
 
     /**
      * BaseMail constructor.
+     *
      * @param Mail $mail
      */
     public function __construct(Mail $mail)
@@ -24,8 +25,7 @@ abstract class BaseMail
     {
         $view = view_path($view);
 
-        \Mail::send($view, $data, function($message) use($person, $subject)
-        {
+        \Mail::send($view, $data, function ($message) use ($person, $subject) {
             $message->to($person->email)
                 ->subject($subject);
         });
@@ -33,8 +33,7 @@ abstract class BaseMail
 
     public function queue($person, $view, $data, $subject)
     {
-        \Mail::queue($view, $data, function($message) use($person, $subject)
-        {
+        \Mail::queue($view, $data, function ($message) use ($person, $subject) {
             $message->to($person->email)
                 ->subject($subject);
         });

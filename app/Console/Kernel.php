@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console;
+namespace app\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -19,14 +19,13 @@ class Kernel extends ConsoleKernel
     /**
      * Define the application's command schedule.
      *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
+     * @param \Illuminate\Console\Scheduling\Schedule $schedule
      */
     protected function schedule(Schedule $schedule)
     {
         //Command for running queues
         $schedule->command('queue:work')
             ->everyMinute()
-            ->sendOutputTo(storage_path() . '/logs/queue-jobs.log');
+            ->sendOutputTo(storage_path().'/logs/queue-jobs.log');
     }
 }

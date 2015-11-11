@@ -1,13 +1,12 @@
 <?php
 
-namespace App\ViewComposers;
+namespace app\ViewComposers;
 
 use Illuminate\Contracts\View\View;
 use Modules\Dashboard\Repositories\DashboardRepository;
 
 class AllComposer
 {
-
     /**
      * @var DashboardRepository
      */
@@ -15,15 +14,13 @@ class AllComposer
 
     public function __construct(DashboardRepository $dashboard)
     {
-
         $this->dashboard = $dashboard;
     }
 
     /**
      * Asociar datos a la vista.
      *
-     * @param  View  $view
-     * @return void
+     * @param View $view
      */
     public function compose(View $view)
     {

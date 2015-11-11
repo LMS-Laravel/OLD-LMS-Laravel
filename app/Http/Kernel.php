@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http;
+namespace app\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -27,8 +27,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth'      => \Modules\User\Http\Middleware\Authenticate::class,
-        'guest'     => \Modules\User\Http\Middleware\RedirectIfAuthenticated::class
+        'auth' => \Modules\User\Http\Middleware\Authenticate::class,
+        'guest' => \Modules\User\Http\Middleware\RedirectIfAuthenticated::class,
         /*'role'      => \Zizaco\Entrust\Middleware\EntrustRole::class,
         'permission'=> \Zizaco\Entrust\Middleware\EntrustPermission::class,
         'ability'   => \Zizaco\Entrust\Middleware\EntrustAbility::classc,*/

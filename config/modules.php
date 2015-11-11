@@ -137,11 +137,11 @@ return [
     */
 
     'composer' => [
-        'vendor'    => 'lms-laravel',
-        'type'      => 'asgard-module',
-        'license'   => 'MIT',
-        'author'    => [
-            'name'  => 'Angel Kurten',
+        'vendor' => 'lms-laravel',
+        'type' => 'asgard-module',
+        'license' => 'MIT',
+        'author' => [
+            'name' => 'Angel Kurten',
             'email' => 'angelkurten@gmail.com',
         ],
     ],
