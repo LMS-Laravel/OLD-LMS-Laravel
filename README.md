@@ -12,6 +12,18 @@ Notice
 -------------
 This application is still in development, if you want to collaborate with the development you can write to angelkurten@hotmail.com
 
+Help
+-------------
+From the team of LMS-laravel we ask for your help to upload the application to a production server with the respective documentation.
+<form name="_xclick" action="https://www.paypal.com/yt/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="empresas" value="angelkurten@hotmail.com">
+<input type="hidden" name="item_name" value="Donation for LMS-Laravel">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="amount" value="5">
+<input type="image" src="http://www.paypal.com/es_XC/i/btn/x-click-butcc-donate.gif" border="0" name="submit" alt="Realice pagos con PayPal: es rápido, gratis y seguro".>
+</form>
+
 Download and Install LMS-Laravel
 -------------
 Step 1: composer create-project lms-laravel/lms-laravel=dev-master {foldername}
