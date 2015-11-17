@@ -35,9 +35,5 @@ User: admin
 
 Pass: admin123
 
-Used By
--------------
 
-+ [PHPacademy](http://phpacademy.co)
-+ [BootcampwithUS](http://bootcampwith.us)
 
