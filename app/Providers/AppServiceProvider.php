@@ -11,6 +11,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /*\Event::listen(['principal.menu'], function($menu){
+            return $menu->add('test', [
+                'title' => 'test menu',
+                'url' => '#home',
+                'data-scroll' => true,
+            ]);
+        });*/
     }
 
     /**

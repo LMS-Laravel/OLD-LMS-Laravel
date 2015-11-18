@@ -3,10 +3,15 @@
 namespace app;
 
 use Styde\Html\Facades\Menu;
+use Illuminate\Support\Facades\Event;
 
 abstract class BaseMenu
 {
     protected $class = null;
+
+    protected $items = [];
+
+    protected $name = null;
 
     /**
      * @param null $class
@@ -23,11 +28,20 @@ abstract class BaseMenu
      */
     abstract public function items();
 
+
     /**
      * @return mixed
      */
     public function boot()
     {
-        return Menu::make($this->items(), $this->class);
+        $this->items = $this->items();
+
+        Event::fire($this->name, $this);
+        return Menu::make($this->items, $this->class);
+    }
+
+    public function add($key, $data)
+    {
+        array_set($this->items, $key, $data);
     }
 }
