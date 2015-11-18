@@ -1,11 +1,13 @@
 <?php
 
-namespace app;
+namespace App;
 
 use Prettus\Repository\Eloquent\BaseRepository as Base;
 
 abstract class BaseRepository extends Base
 {
+
+
     public function findBySlug($slug)
     {
         return $this->findByField('slug', $slug);
@@ -15,7 +17,8 @@ abstract class BaseRepository extends Base
     {
         $result = $this->findBySlug($id)->first();
 
-        if (!$result) {
+        if(!$result)
+        {
             $result = $this->find($id);
         }
 
@@ -26,10 +29,13 @@ abstract class BaseRepository extends Base
     {
         $result = $this->findBySlugOrId($id);
 
-        if (!$result) {
+        if(!$result)
+        {
             return abort(404);
         }
 
         return  $result;
     }
+
+
 }

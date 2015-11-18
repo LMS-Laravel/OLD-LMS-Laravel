@@ -1,14 +1,17 @@
 <?php
 
-namespace app\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\ViewComposers\AllComposer;
+
 
 class ComposerServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
+     *
+     * @return void
      */
     public function boot()
     {
@@ -18,6 +21,8 @@ class ComposerServiceProvider extends ServiceProvider
 
     /**
      * Register the application services.
+     *
+     * @return void
      */
     public function register()
     {

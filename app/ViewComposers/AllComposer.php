@@ -8,6 +8,7 @@ use Modules\Dashboard\Repositories\DashboardRepository;
 
 class AllComposer
 {
+
     /**
      * @var DashboardRepository
      */
@@ -19,6 +20,7 @@ class AllComposer
 
     public function __construct(DashboardRepository $dashboard, AdministratorMenu $administratorMenu)
     {
+
         $this->dashboard = $dashboard;
         $this->administratorMenu = $administratorMenu;
     }
@@ -26,7 +28,8 @@ class AllComposer
     /**
      * Asociar datos a la vista.
      *
-     * @param View $view
+     * @param  View  $view
+     * @return void
      */
     public function compose(View $view)
     {

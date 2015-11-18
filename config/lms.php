@@ -3,6 +3,6 @@
 return [
 
     'name' => 'LMS - Laravel',
-    'description' => "It's Simple",
-    'base_theme' => 'themes',
+    'description'   => "It's Simple",
+    'base_theme' => 'themes'
 ];

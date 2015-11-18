@@ -1,13 +1,15 @@
 <?php
 
-namespace app\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Modules\Dashboard\Repositories\DashboardRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
+     *
      */
     public function boot()
     {
@@ -22,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
 
     /**
      * Register any application services.
+     *
+     * @return void
      */
     public function register()
     {

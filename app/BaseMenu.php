@@ -1,12 +1,11 @@
-<?php
-
-namespace app;
+<?php namespace App;
 
 use Styde\Html\Facades\Menu;
 use Illuminate\Support\Facades\Event;
 
 abstract class BaseMenu
 {
+
     protected $class = null;
 
     protected $items = [];
@@ -22,11 +21,11 @@ abstract class BaseMenu
     }
 
     /**
-     * Specify Items Menu.
-     *
+     * Specify Items Menu
      * @return string
      */
-    abstract public function items();
+    abstract function items();
+
 
     abstract public function police();
 
