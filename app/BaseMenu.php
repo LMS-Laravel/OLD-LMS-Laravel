@@ -28,6 +28,8 @@ abstract class BaseMenu
      */
     abstract public function items();
 
+    abstract public function police();
+
 
     /**
      * @return mixed

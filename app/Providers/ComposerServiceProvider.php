@@ -12,7 +12,7 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Usando funciones anónimas...
+        // Usando funciones anonimas...
         view()->composer('*', AllComposer::class);
     }
 
