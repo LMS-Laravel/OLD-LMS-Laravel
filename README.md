@@ -22,9 +22,9 @@ Download and Install LMS-Laravel
 -------------
 Step 1: composer create-project lms-laravel/lms-laravel=dev-master {foldername}
 
-Step 2: cd {foldername}; php artisan app:install
+Step 2: Configurate database in .env
 
-Step 3: Configurate database in .env
+Step 3: cd {foldername}; php artisan app:install
 
 Step 4: Configurate credentials mailgun in .env
 
