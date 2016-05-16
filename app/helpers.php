@@ -4,10 +4,10 @@ function theme_path($theme = null)
 {
     if(is_null($theme))
     {
-        $theme = ucfirst(config('themes.default'));
+        $theme = config('themes.default');
     }
 
-    return $theme;
+    return ucfirst($theme);
 }
 
 function view_path($view, $theme = null)
@@ -16,7 +16,11 @@ function view_path($view, $theme = null)
     {
         $theme = ucfirst(config('themes.default'));
     }
-    return theme_path($theme) . ".views." . $view;
+    else
+    {
+        $theme = theme_path($theme);
+    }
+    return $theme . ".views." . $view;
 }
 
 function asset_theme($resource, $theme = null)

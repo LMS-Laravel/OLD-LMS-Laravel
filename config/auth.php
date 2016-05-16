@@ -70,7 +70,7 @@ return [
     */
 
     'password' => [
-        'email' => view_path('auth.mail.reset'),
+        'email' => view_path('auth.mail.reset', 'default'),
         'table' => 'password_resets',
         'expire' => 60,
     ],
