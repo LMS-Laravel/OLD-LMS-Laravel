@@ -1,7 +1,7 @@
 <?php
 
 Breadcrumbs::register('courses_learning', function($breadcrumbs) {
-    $breadcrumbs->push('Cursos', route('dashboard.learning'));
+    $breadcrumbs->push(trans('dashboard::menus.sidebar.courses'), route('dashboard.learning'));
 });
 
 Breadcrumbs::register('course_learning', function($breadcrumbs, $course) {
