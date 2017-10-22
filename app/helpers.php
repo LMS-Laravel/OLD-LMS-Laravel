@@ -12,15 +12,11 @@ function theme_path($theme = null)
 
 function view_path($view, $theme = null)
 {
-    if(is_null($theme))
-    {
-        $theme = ucfirst(config('themes.default'));
-    }
-    else
+    if(!is_null($theme))
     {
         $theme = theme_path($theme);
     }
-    return $theme . ".views." . $view;
+    return $theme . $view;
 }
 
 function asset_theme($resource, $theme = null)
