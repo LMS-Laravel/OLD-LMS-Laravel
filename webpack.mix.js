@@ -11,5 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
+require('laravel-mix-merge-manifest');
+mix.mergeManifest();
+
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+
+mix.js('resources/views/heidys-theme/js/app.js', 'public/heidys-theme/js')
+    .sass('resources/views/heidys-theme/sass/app.scss', 'public/heidys-theme/css');
