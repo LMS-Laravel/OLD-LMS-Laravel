@@ -14,10 +14,11 @@ LMS-laravel is based as its name indicates in the framework laravel 5, and uses 
 
 ### Installation
 1. Run `git clone https://github.com/LMS-Laravel/LMS-Laravel.git LMS-Laravel`
-2. From the projects root run `cp .env.example .env`
-3. Configure your `.env` file
-4. From the projects root run `php artisan app:install`
-5. Configurate credentials mailgun in .env
+2. Run `composer install` (install composer beforehand)
+3. From the projects root run `cp .env.example .env`
+4. Configure your `.env` file
+5. From the projects root run `php artisan app:install`
+6. Configurate credentials mailgun in .env
 
 ### Seeded Credentials
 -------------
