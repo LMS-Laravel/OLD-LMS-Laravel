@@ -1,0 +1,25 @@
+{
+    "name": "lms-laravel/dashboard",
+    "description": "",
+    "authors": [
+        {
+            "name": "Angel Kürten",
+            "email": "angelkurten@hotmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Dashboard\\Providers\\DashboardServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dashboard\\": ""
+        }
+    }
+}
